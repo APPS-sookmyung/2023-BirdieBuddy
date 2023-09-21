@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="birdOfKoreaLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="start.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국의 새</title>
+</head>
+
+<body>
+    <image src="흰눈썹황금새.jpg" alt="흰눈썹황금새" id="startingpageImage"/>
+    <div id="startPageIntro">
+        <h1 id="title">새미새</h1>
+        <p id="words">대한민국에 발견되는 새들을 탐조하는 사람들을 위한 사이트, <strong>"한국의 새"</strong>에 환영합니다!<br><br>
+        일반 도감은 물론, 종 검색, 동정 부탁, 탐조 기록, 새관련 뉴스 보기와 탐조 장비 구매가 가능한 사이트입니다.<br><br>
+        회원가입해서 새의 세상에 빠져볼까요?</p>
+        <form id="startPage" action="../EncyclopediaPage/encyclopedia.html">
+            <table id="loginTable">
+                <tr>
+                    <td class="login">
+                        <label for="id">아이디:</label>
+                    </td>
+                    <td>
+                        <input id="id" name="id" type="text" required minlength="5" maxlength="15">
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="login">
+                        <label for="pw">비밀번호:</label>
+                    </td>
+                    <td>
+                        <input id="pw" name="pw" type="password" required pattern="[a-zA-Z0-9.*!]{5,15}">
+                    </td>
+                </tr>
+
+            </table> 
+            <a href="#" id="startNew">회원가입</a><span style="color:#2AB2FF" id="slash">/</span><a href="#" id="find">아이디비번 찾기</a>
+            <button id="submitButton" name="sumbitButton">Start</button>
+            <p id="contact">Contact: mnevermore1122@sookmyung.ac.kr</p>
+            <script src="start.js"></script>
+        </form>
+    </div>
+</body>
+
+</html>

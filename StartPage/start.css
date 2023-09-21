@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    border:0;
+}
+
+@font-face {
+    font-family: 'Flower_tree';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_04@1.0/Flower_tree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCC-DodamdodamR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-DodamdodamR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #9DB589;
+    width: 100vw;
+}
+
+#startingpageImage{
+    width: 50vw;
+    height: auto;
+    margin-left:15vw;
+    margin-top: 10vh;
+}
+
+#startPageIntro{
+    display:block;
+    position:absolute;
+    top:3vh;
+    right: 15vw;
+    background-color: #4C5C3D;
+    opacity: 90%;
+    width: 25vw;
+    height: 94vh;
+}
+
+#words{
+    margin:10% 10% 0 10%;
+    text-align: center;
+    font-family: 'KCC-DodamdodamR';
+    color:#c0c0c2;
+    font-weight:50;
+    font-size:20px;
+}
+
+#title{
+    text-align: center;
+    margin:15% 10%;
+    color:white;
+    font-size:80px;
+    font-weight:300;
+    font-family: 'Flower_tree';
+    
+}
+#loginTable{
+    margin-top: 20%;
+    margin-left: 18%;
+}
+
+.login{
+    width:60px;
+    font-family: 'KCC-DodamdodamR';
+}
+
+#submitButton{
+    background-color: black;
+    color: white;
+    float:right;
+    width:40px;
+    height:23px;
+    font-size:10px;
+    border-radius:40%;
+    margin-right:21%;
+}
+
+#startNew, #find{
+    font-size:10px;
+    color:#2AB2FF;
+}
+#startNew{
+    margin-left: 135px;
+}
+
+#contact{
+    color:white;
+    font-size: 2px;
+    text-align: center;
+    margin-top: 100px;
+}
+#id, #pw{
+    width: 95%;
+}
+
+@media screen and (max-width:1500px), (max-height:720px){
+    #contact{
+        display:none;
+    }
+}
+@media screen and (max-width:1400px){
+    #loginTable{
+        margin-left: 8%;
+    }
+}
+@media screen and (max-width: 1100px){
+    #startNew{
+        display: none;
+    }
+    #find{
+        display: none;
+    }
+    #slash{
+        display: none;
+    }
+}
+@media screen and (max-width: 1050px){
+    #words{
+        display:none;
+    }
+    #startPageIntro{
+        height:80vh;
+    }
+}
+@media screen and (max-width: 800px){
+    #startPageIntro{
+        height:60vh;
+    }
+    #title{
+        font-size:50px;
+    }
+}
