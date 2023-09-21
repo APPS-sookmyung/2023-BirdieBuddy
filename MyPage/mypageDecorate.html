@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../StartPage/birdOfKoreaLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="mypageDecorate.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mainFrame">
+            <image src="../mascot.png" id="searchMascot"></image>
+            <div id="pageName"><p>마이페이지</p></div>
+            <div id="main">
+                <div id="profile">
+                    <p style="font-weight: 900;">Avatar</p>
+                    <div id="avatar"></div>
+                    <input id="nickname" type="text" placeholder='"닉네임"' readonly="readonly">
+                    <div id="buttons">
+                        <button>취소</button>
+                        <button>확인</button>
+                    </div>
+                </div>
+                <div id="decorate">
+                    <table>
+                        <tr>
+                            <td width="500px;"><p style="font-weight: 900;">사용 중</p></td>
+                            <td width="500px;"><p style="font-weight: 900;">미사용</p></td>
+                        </tr>
+                        <tr height="10px"></tr>
+                        <tr>
+                            <td class="wardrobe" height="50%"></td>
+                            <td class="wardrobe" height="50%"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="buttonLine">
+                <button class="pageButton" onclick="location.href = '../EncyclopediaPage/encyclopedia.html'">도감</button>
+                <button class="pageButton" onclick="location.href = '../AskPage/ask.html'">동정</button>
+                <button class="pageButton" onclick="location.href = '../RecordPage/record.html'">기록</button>
+                <button class="pageButton" onclick="location.href = '../NewsPage/news.html'">새뉴스</button>
+                <button class="pageButton" onclick="location.href = '../BadgePage/badge.html'">배지</button>
+                <button class="pageButton" onclick="location.href = '../MyPage/mypage.html'" id="currentButton">마이페이지</button>
+            </div>
+        </div>
+        <div id="choose">
+            <div onclick="location.href = '../MyPage/mypage.html'">
+                <span class="tabLabel">프로필</span>
+                <input type="image" src="../orangeTab.png" class="tab" value="안녕">
+            </div>
+            <div onclick="location.href = '../MyPage/mypageDecorate.html'">
+                <span class="tabLabel">꾸미기</span>
+                <input type="image" src="../yellowTab.png" id="currentTab" class="tab">
+            </div>
+            <div onclick="location.href = '../MyPage/mypageStore.html'">
+                <span class="tabLabel">상점</span>
+                <input type="image" src="../greenTab.png" class="tab">
+            </div>
+        </div>
+        <script src="../EncyclopediaPage/encyclopedia.js"></script>
+    </body>
+</html>
