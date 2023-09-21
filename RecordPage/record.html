@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../StartPage/birdOfKoreaLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="record.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mainFrame">
+            <image src="../mascot.png" id="searchMascot"></image>
+            <div id="pageName"><p>탐조 추가</p></div>
+            <div id="main">
+                <div id="add">
+                    <input type="date" id="date">
+                    <input type="text" id="place" placeholder="탐조 위치">
+                    <div id="birdFrame">
+                        <div id="addBird">
+                            <input type="text" id="birdName">            
+                            <button id="birdNameSubmit">제출</button>
+                        </div>
+                        <div id="explanation">
+                            <textarea id="write"></textarea>
+                            <button id="writeSubmit">등록</button>
+                        </div>
+                        <div id="img">
+                            <div id="addImg">
+                                <img src="photo.png" id="photo">
+                                <img src="rightarrow.png" id="nextImg">
+                            </div>
+                            <input type="file" id="file">
+                            <p id="count"><span id="number">1</span>/<span id="total">8</span></p>
+                        </div>
+                    </div>
+                    <img src="addButton.png" id="addButton">   
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="buttonLine">
+                <button class="pageButton" onclick="location.href = '../EncyclopediaPage/encyclopedia.html'">도감</button>
+                <button class="pageButton" onclick="location.href = '../AskPage/ask.html'">동정</button>
+                <button class="pageButton" onclick="location.href = '../RecordPage/record.html'" id="currentButton">기록</button>
+                <button class="pageButton" onclick="location.href = '../NewsPage/news.html'">새뉴스</button>
+                <button class="pageButton" onclick="location.href = '../BadgePage/badge.html'">배지</button>
+                <button class="pageButton" onclick="location.href = '../MyPage/mypage.html'">마이페이지</button>
+            </div>
+        </div>
+        <div id="choose">
+            <div onclick="location.href = '../MyPage/mypage.html'">
+                <span class="tabLabel">추가</span>
+                <input type="image" src="../orangeTab.png" class="tab" id="currentTab" value="안녕">
+            </div>
+            <div onclick="location.href = '../MyPage/mypageDecorate.html'">
+                <span class="tabLabel">기록</span>
+                <input type="image" src="../yellowTab.png" class="tab">
+            </div>
+        </div>
+        <script src="record.js"></script>
+    </body>
+</html>
