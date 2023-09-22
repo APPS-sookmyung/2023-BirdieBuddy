@@ -47,6 +47,12 @@ body{
 #main{
     width:85%;
     height:73.8%;
+    display:grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+    grid-template-rows:30px 8fr 1fr;
     background-color: #FFFBE9;
     border-radius: 20px;
     margin-top: 1%;
@@ -58,71 +64,91 @@ body{
 #main::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
-#add{
-    width:65vw;
-    height:38vh;
-    background-color:#FFF4C3;
-    margin:0px auto;
-    border-radius:10px;
+#birdwatchBasicInfo{
+    grid-area:"a";
 }
-#date{
+.add{
+    grid-area:"b";
+}
+#binocular{
+     width:2vw;
+     margin-left:2vw;
+     display:inline-block;
+}
+.date{
     display:inline-block;
-    margin-top:20px;
+    margin-top:5px;
     margin-bottom:5px;
     margin-left:2vw;
     font-size:1vw;
 }
-#date:hover{
+.date:hover{
     cursor:pointer;
 }
-#place{
+.place{
     width:100px;
     display:inline-block;
     margin-left:20px;
     font-size:1vw;
     background-color: white;
 }
-#place:hover{
+.place:hover{
     cursor:pointer;
 }
-#birdFrame{
-    width:95%;
-    height:30vh;
-    margin:0 auto;
+.birdFrame{
+    width:65vw;
+    height:31vh;
+    background-color:#FFF4C3;
+    margin:20px auto;
+    padding-top:2vh;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:10px;
 }
-#addBird{
-    width:98%;
+.addBird{
+    width:51vw;
     height:28px;
+    display:inline-block;
     border-radius:15px;
     padding-left:2%;
     background-color:#9BCC8F;
 }
-#birdName{
-    width:85%;
-    border-radius:15px;
+.birdName{
+    width:40vw;
+    border-radius:5px;
 }
-#birdNameSubmit{
+.birdNameSubmit{
     float:right;
     margin-right:1vw;
     margin-top:0.5vh;
     border-radius:10px;
     font-size:0.9vw;
 }
-#birdNameSubmit:hover{
+.birdNameSubmit:hover{
     cursor:pointer;
 }
+.deletebutton{
+    display:inline-block;
+    width:1vw; 
+    float:right;
+}
 #addButton{
-    position:absolute;
-    width:4vw;
-    height:4vw;
-    top:30vh;
-    left:4vw;
-    grid-area: addButton;
+    width:3vw;
+    height:3vw;
+    margin-left:2vw;
 }
 #addButton:hover{
     cursor:pointer;
 }
-#explanation{
+#addRecordBirdButton{
+    width:6vw;
+    float:right;
+    margin-right:2vw;
+}
+#addRecordBirdButton:hover{
+    cursor:pointer;
+}
+.explanation{
     display:inline-block;
     width:80%;
     height:20vh;
@@ -132,26 +158,26 @@ body{
     border-radius:10px;
     background-color: #9BCC8F;
 }
-#writeSubmit{
+.writeSubmit{
     display:block;
     border-radius: 10px;
     font-size:0.9vw;
 }
-#writeSubmit:hover{
+.writeSubmit:hover{
     cursor:pointer;
 }
-#write{
+.write{
     width:97%;
     height:75%;
     border-radius: 10px;
     resize:none;
 }
-#img{
+.img{
     float:right;
     width:10.5vw;
     height:12vw;
 }
-#addImg{
+.addImg{
     display:flex;
     width:10.5vw;
     height:10.5vw;
@@ -161,25 +187,33 @@ body{
     justify-content: center;
     align-items: center;
 }
-#addImg:hover{
+.addImg:hover{
     cursor:pointer;
 }
-#photo{
+.photo{
     width:2vw;
     height:auto;
 }
-#nextImg{
-    position:absolute;
-    transform: translateX(5vw);
-    width:1.5vw;
+.prevImg{
+    display: inline-block;
+    transform: translateX(4.5vw);
+    width:0.6vw;
 }
-#file{
+.nextImg{
+    display: inline-block;
+    transform: translateX(4.5vw);
+    width:0.6vw;
+}
+.file{
     display: none;
 }
-#count{
+.count{
     float:right;
     position:relative;
     font-size:7px;
+}
+#buttons{
+    grid-area:"c";
 }
 #line{
     float:none;

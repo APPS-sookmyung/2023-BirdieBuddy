@@ -16,28 +16,37 @@
             <image src="../mascot.png" id="searchMascot"></image>
             <div id="pageName"><p>탐조 추가</p></div>
             <div id="main">
-                <div id="add">
-                    <input type="date" id="date">
-                    <input type="text" id="place" placeholder="탐조 위치">
-                    <div id="birdFrame">
-                        <div id="addBird">
-                            <input type="text" id="birdName">            
-                            <button id="birdNameSubmit">제출</button>
+                <div id="birdwatchBasicInfo">
+                    <img src="binoculars.png" id="binocular">
+                    <p style="display: inline; font-size: 20px; margin-left:10px;">오늘의 탐조 자랑</p>
+                    <input type="date" class="date">
+                    <input type="text" class="place" placeholder="탐조 위치">
+                </div>
+                <div class="add">
+                    <div class="birdFrame">
+                        <div class="addBird">
+                            <input type="text" class="birdName">            
+                            <button class="birdNameSubmit">제출</button>
                         </div>
-                        <div id="explanation">
-                            <textarea id="write"></textarea>
-                            <button id="writeSubmit">등록</button>
+                        <img src="deletebutton.png" class="deletebutton">
+                        <div class="explanation">
+                            <textarea class="write"></textarea>
+                            <button class="writeSubmit">등록</button>
                         </div>
-                        <div id="img">
-                            <div id="addImg">
-                                <img src="photo.png" id="photo">
-                                <img src="rightarrow.png" id="nextImg">
+                        <div class="img">
+                            <div class="addImg">
+                                <img src="photo.png" class="photo">
                             </div>
-                            <input type="file" id="file">
-                            <p id="count"><span id="number">1</span>/<span id="total">8</span></p>
+                            <img src="leftarrow.png" class="prevImg">
+                            <img src="rightarrow.png" class="nextImg">
+                            <input type="file" class="file">
+                            <p class="count"><span class="number">1</span>/<span class="total">8</span></p>
                         </div>
-                    </div>
-                    <img src="addButton.png" id="addButton">   
+                    </div>  
+                </div>
+                <div id="buttons">
+                    <img src="addButton.png" id="addButton"> 
+                    <img src="addRecordBirdButton.png" id="addRecordBirdButton"> 
                 </div>
             </div>
             <div id="line"></div>
