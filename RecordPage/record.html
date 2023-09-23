@@ -19,8 +19,8 @@
                 <div id="birdwatchBasicInfo">
                     <img src="binoculars.png" id="binocular">
                     <p style="display: inline; font-size: 20px; margin-left:10px;">오늘의 탐조 자랑</p>
-                    <input type="date" class="date">
-                    <input type="text" class="place" placeholder="탐조 위치">
+                    <input type="date" id="date">
+                    <input type="text" id="place" placeholder="탐조 위치">
                 </div>
                 <div class="add">
                     <div class="birdFrame">
@@ -34,13 +34,13 @@
                             <button class="writeSubmit">등록</button>
                         </div>
                         <div class="img">
-                            <div class="addImg">
+                            <label class="fileLabel">
                                 <img src="photo.png" class="photo">
-                            </div>
+                                <input type="file" class="file" multiple="multiple" accept=".jpg, .jpeg, .png">
+                            </label>
                             <img src="leftarrow.png" class="prevImg">
                             <img src="rightarrow.png" class="nextImg">
-                            <input type="file" class="file">
-                            <p class="count"><span class="number">1</span>/<span class="total">8</span></p>
+                            <p class="count"><span class="number">0</span>/<span class="total">0</span></p>
                         </div>
                     </div>  
                 </div>
@@ -60,15 +60,15 @@
             </div>
         </div>
         <div id="choose">
-            <div onclick="location.href = '../MyPage/mypage.html'">
+            <div onclick="location.href = window.location.href">
                 <span class="tabLabel">추가</span>
                 <input type="image" src="../orangeTab.png" class="tab" id="currentTab" value="안녕">
             </div>
-            <div onclick="location.href = '../MyPage/mypageDecorate.html'">
+            <div onclick="location.href = '../ViewRecordPage/viewRecord.html'">
                 <span class="tabLabel">기록</span>
                 <input type="image" src="../yellowTab.png" class="tab">
             </div>
         </div>
-        <script src="record.js"></script>
+        <script src="record.js" type="module"></script>
     </body>
 </html>
