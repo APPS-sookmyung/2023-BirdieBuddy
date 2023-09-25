@@ -27,7 +27,6 @@ $("#addButton")
     .addEventListener("click",()=>{
         $(".add").insertAdjacentHTML("beforeend",addedRecord)
         data[1].Birds.push({"Birdname":"", "Explanation":"", "Photos":[], "Id":""});
-        console.log(data);
 })
 
 
@@ -36,8 +35,8 @@ $("#addButton")
 function changePhoto(target){
     target.addEventListener("change",()=>{
         const file = target.files[0];
+        const files = target.files;
         //FileReader이란걸 쓴다. 
-        const reader = new FileReader();
         const allFiles = document.querySelectorAll(".file");
         const allInitPhotos = document.querySelectorAll(".photo");
         const allNumbers = document.querySelectorAll(".number");
@@ -45,8 +44,9 @@ function changePhoto(target){
 
         //내가 클릭한 file이 몇번째 file 버튼일까 구하는 코드
         const index = Array.prototype.indexOf.call(allFiles,target);
-        console.log(index);
 
+        /*
+        const reader = new FileReader();
         reader.addEventListener("load",()=>{
             //처음에 allInitPhotos[index]말고 그냥 $(".photos")했더니만 첫번째 file 대표사진만 바뀌더라. 이런 실수.
             allInitPhotos[index].src = reader.result;
@@ -56,10 +56,26 @@ function changePhoto(target){
         if (file){
             reader.readAsDataURL(file);
         }
-        allNumbers[index].innerText = 1;
-        allTotals[index].innerText = target.files.length;
+        */
+        for (let i=0; i<files.length; i++){
+            let reader = new FileReader();
+            reader.onload = ()=>{
+                data[1].Birds[index].Photos.push(reader.result);
+                console.log(data[1].Birds[index].Photos);
+                if (i==0){
+                    allInitPhotos[index].src = reader.result;
+                    allInitPhotos[index].style.width = "8vw";
+                    allInitPhotos[index].style.height = "auto";
+                }
+            }
+            reader.readAsDataURL(files[i]);
+        }
+        if (files.length){
+            allNumbers[index].innerText = 1;
+            allTotals[index].innerText = target.files.length;
+        }
+        
         //json에 저장하기   
-        data[1].Birds[index].Photos = target.files;
     })
 }
 
@@ -88,12 +104,10 @@ $(".add")
             }
 
             //사진바꾸기 술
-            const reader = new FileReader();
-            reader.addEventListener("click",()=>{
-                allInitPhotos[index].src = reader.result;
-            })
-            console.log(data[1].Birds[index].Photos[allNumbers[index].innerText]);
-            reader.readAsDataURL(data[1].Birds[index].Photos[allNumbers[index].innerText]);
+            //data[1].Birds[allNumbers[index].innerText -1]
+            let currentImg = allNumbers[index].innerText -1
+            allInitPhotos[index].src = data[1].Birds[index].Photos[currentImg];
+            //allInitPhotos[index].src = data[1].Birds[allNumbers[index].innerText -1];
         }
         if (e.target.className=="nextImg"){
             const allNextImg = document.querySelectorAll(".nextImg");
@@ -107,6 +121,8 @@ $(".add")
             else{
                 allNumbers[index].innerText++;
             }
+            let currentImg = allNumbers[index].innerText -1
+            allInitPhotos[index].src = data[1].Birds[index].Photos[currentImg];
         }
     })
 
@@ -129,7 +145,6 @@ $("#addRecordBirdButton")
             data[1].Birds[i].Id = i+1;
             //"Birdname":"","Explanation":"","Photos":[],"Id":1
         }
-        console.log(JSON.stringify(data))
             
         setTimeout(()=>{location.href = "../ViewRecordPage/viewRecord.html";},2000);
         
