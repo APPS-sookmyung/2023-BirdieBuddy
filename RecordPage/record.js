@@ -22,6 +22,7 @@ place.addEventListener("input",resizeInput);
 //json을 부르는 코드. assert, {type:'json'}이 없으면 에러가 뜬다. 아 참, html에도 type="module"을 넣어줘야한다.
 import data from './record.json' assert { type: 'json' };
 
+//⭐outerHTML
 const addedRecord = $(".birdFrame").outerHTML;
 $("#addButton")
     .addEventListener("click",()=>{
@@ -34,7 +35,6 @@ $("#addButton")
 //input type file을 누를때 쓸 함수이다. (대표 사진이 바뀌고, file에서 받은 사진들을 json에 저장하는 코드)
 function changePhoto(target){
     target.addEventListener("change",()=>{
-        const file = target.files[0];
         const files = target.files;
         //FileReader이란걸 쓴다. 
         const allFiles = document.querySelectorAll(".file");
@@ -57,11 +57,15 @@ function changePhoto(target){
             reader.readAsDataURL(file);
         }
         */
+        if (files.length){
+            allNumbers[index].innerText = 1;
+            allTotals[index].innerText = target.files.length;
+            data[1].Birds[index].Photos.length = 0;
+        }
         for (let i=0; i<files.length; i++){
             let reader = new FileReader();
             reader.onload = ()=>{
                 data[1].Birds[index].Photos.push(reader.result);
-                console.log(data[1].Birds[index].Photos);
                 if (i==0){
                     allInitPhotos[index].src = reader.result;
                     allInitPhotos[index].style.width = "8vw";
@@ -70,12 +74,9 @@ function changePhoto(target){
             }
             reader.readAsDataURL(files[i]);
         }
-        if (files.length){
-            allNumbers[index].innerText = 1;
-            allTotals[index].innerText = target.files.length;
-        }
         
-        //json에 저장하기   
+        console.log(data[1].Birds[index].Photos)
+        target.value = '';
     })
 }
 
@@ -89,7 +90,20 @@ $(".add")
         if (e.target.className == "file"){    
             //파일 버튼 누르면 인풋 파일이 작동하는 코드
             changePhoto(e.target);
+            //왼쪽 쉬프트 누르고 파일 버튼 누르면 전체 화면 뜨는 코드
+            if (e.shiftKey){
+                e.target.disabled = true;
+                const imgFullScreen = $("#imgFullScreen")
+                imgFullScreen.style.display = "flex";
+                $("#fsImg").src = e.target.parentElement.querySelector(".photo").src;
+                imgFullScreen.addEventListener("click",()=>{
+                    imgFullScreen.style.display = "none";
+                    e.target.disabled = false;
+                })
+            }
         }
+
+        //왼쪽 오른쪽 버튼 누르면 다른 사진으로 넘어가는 코드
         if (e.target.className == "prevImg"){
             const allPrevImg = document.querySelectorAll(".prevImg");
             const index = Array.prototype.indexOf.call(allPrevImg,e.target);
@@ -126,10 +140,7 @@ $(".add")
         }
     })
 
-//왼쪽 오른쪽 버튼 누르면 다른 사진으로 넘어가는 코드
 
-
-$(".total")
 
 //Submit 누르면 날짜와 장소를 json파일로 옮기기
 $("#addRecordBirdButton")
@@ -139,7 +150,6 @@ $("#addRecordBirdButton")
         const birdNames = document.querySelectorAll(".birdName")
         const writings = document.querySelectorAll(".write")
         for (let i=0; i<birdNames.length; i++){
-            console.log(data[1].Birds[0]);
             data[1].Birds[i].Birdname = birdNames[i].value;
             data[1].Birds[i].Explanation = writings[i].value;
             data[1].Birds[i].Id = i+1;
