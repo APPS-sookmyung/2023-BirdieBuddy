@@ -68,13 +68,12 @@ function changePhoto(target){
                 data[1].Birds[index].Photos.push(reader.result);
                 if (i==0){
                     allInitPhotos[index].src = reader.result;
-                    allInitPhotos[index].style.width = "8vw";
+                    allInitPhotos[index].style.width = "15vw";
                     allInitPhotos[index].style.height = "auto";
                 }
             }
             reader.readAsDataURL(files[i]);
         }
-        
         console.log(data[1].Birds[index].Photos)
         target.value = '';
     })
