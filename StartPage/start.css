@@ -27,7 +27,22 @@ body{
     margin-left:15vw;
     margin-top: 10vh;
 }
+#nextImage{
+    position:absolute;
+    left:0;
+    width: 50vw;
+    height: auto;
+    margin-left:15vw;
+    margin-top: 10vh;
+    background-color: red;
+    transform:translateX(-100vw);
+    animation: slideRight 10s infinite;
+}
 
+@keyframes slideRight{
+    0%, 80% {transform:translateX(-100vw)}
+    100% {transform:translateX(0%)}
+}
 #startPageIntro{
     display:block;
     position:absolute;
