@@ -44,7 +44,7 @@ body{
 
 #main{
     width:85%;
-    height:90%;
+    height:81%;
     background-color: #FFFBE9;
     border-radius: 20px;
     margin-top: 1%;
@@ -190,7 +190,28 @@ body{
     font-weight:600;
     background-color:#DCEC97;
 }
-
+#settings{
+    position:absolute;
+    right:0;
+    transform: translateX(6vw);
+}
+.logout{
+    position: relative;
+    width:2vw;
+    height:auto;
+    z-index: 6;
+}
+.logout:hover{
+    cursor: pointer;
+}
+.notification{
+    width:1.5vw;
+    height:auto;
+    margin-left: 1vw;
+}
+.notification{
+    cursor: pointer;
+}
 @media screen and (max-width:1200px){
     #choose{
         display:none;

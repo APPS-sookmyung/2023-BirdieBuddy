@@ -199,7 +199,28 @@ body{
 #currentTab{
     transform:translateX(15%);
 }
-
+#settings{
+    position:absolute;
+    right:0;
+    transform: translateX(6vw);
+}
+.logout{
+    position: relative;
+    width:2vw;
+    height:auto;
+    z-index: 6;
+}
+.logout:hover{
+    cursor: pointer;
+}
+.notification{
+    width:1.5vw;
+    height:auto;
+    margin-left: 1vw;
+}
+.notification{
+    cursor: pointer;
+}
 @media screen and (max-width:1200px){
     #choose{
         display:none;

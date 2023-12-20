@@ -14,6 +14,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 body{
     background-color: #9DB589;
     height: 98vh;
@@ -30,23 +31,14 @@ body{
 }
 #searchMascot{
     position:absolute;
-    left:30%;
-    top:4%;
     width:5%;
-}
-#newsName{
-    width:30vw;
-    height:40px;
-    margin:0 auto;
-    border-radius: 10px;
-    background-color:#CCD6A6;
-    color:white;
-    font-size:25px;
-    text-align: center;
+    top:12vh;
+    transform: translateX(15vw);
 }
 #main{
+    position:relative;
     width:85%;
-    height:73.8%;
+    height:80%;
     background-color: #FFFBE9;
     border-radius: 20px;
     margin-top: 2%;
@@ -57,6 +49,79 @@ body{
 }
 #main::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
+}
+#newsTitle{
+    width: 40vw;
+    margin: 7vh auto;
+    border-bottom: black 2px solid;
+    text-align:center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family: 'Ultra', serif;
+}
+.articleType1{
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateY(100%);
+    animation: slideIn 1s calc(200ms*var(--order)) forwards;
+}
+@keyframes slideIn {
+    from {transform:translateY(100%);}
+    to {transform:translateY(0%);}
+}
+
+.appearBottom{
+    animation: appearBottom 1s forwards;
+}
+.appearTop{
+    
+}
+@keyframes appearBottom {
+    from {transform:translateY(100%);}
+    to {transform:translateY(0%);}
+}
+@keyframes appearTop {
+    from {transform:translateY(-100%);}
+    to {transform:translateY(0%);}
+}
+.articleImg{
+    width:10vw;
+    height: 10vw;
+    margin: 0 2%;
+    display: inline-block;
+}
+.articleText{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 2%;
+    width: 78%;
+    height: 10vw;
+}
+.articleTitle{
+    width: fit-content;
+    margin-bottom: 2vh;
+    border-bottom: black solid 1px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+.articleTitle:hover{
+    cursor: pointer;
+}
+.articleSrc{
+    margin-bottom: 1vh;
+    color: blue;
+}
+.articleDescr{
+    width: 100%;
+    height: 4em;
+    overflow:hidden;
 }
 #line{
     position:absolute;
@@ -95,7 +160,28 @@ body{
     font-weight:600;
     background-color:#DCEC97;
 }
-
+#settings{
+    position:absolute;
+    right:0;
+    transform: translateX(6vw);
+}
+.logout{
+    position: relative;
+    width:2vw;
+    height:auto;
+    z-index: 6;
+}
+.logout:hover{
+    cursor: pointer;
+}
+.notification{
+    width:1.5vw;
+    height:auto;
+    margin-left: 1vw;
+}
+.notification{
+    cursor: pointer;
+}
 @media screen and (max-width:1200px){
     #choose{
         display:none;
