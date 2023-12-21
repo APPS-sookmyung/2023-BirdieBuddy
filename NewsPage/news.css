@@ -186,6 +186,9 @@ a:visited{
     #choose{
         display:none;
     }
+    #settings{
+        display:none;
+    }
 }@media screen and (max-height:500px){
     #choose{
         display:none;
