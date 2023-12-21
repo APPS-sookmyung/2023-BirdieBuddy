@@ -30,39 +30,19 @@ body{
 }
 #searchMascot{
     position:absolute;
-    left: 19%;
+    right: 5vw;
     top:5%;
     width:5%;
 }
-#search{
-    width:60%;
-    height:7%;
-    display:flex;
-    margin: 0px auto;
-    border-radius: 20px;
-    background-color: #FFFBE9;
-    box-shadow:0px 2px grey;
-}
-#searchBox{
-    width: 85%;
-    height: 65%;
-    margin-left:5%;
-    margin-top: 1%;
-}
-#searchButton{
-    height:70%;
-    margin-top: 1%;
-    margin-left: 1%;
-}
 #main{
     width:85%;
-    height:71%;
+    height:82%;
     background-color: #FFFBE9;
     border-radius: 20px;
     margin-top: 1%;
     margin-left:auto;
     margin-right:auto;
-    padding-top:30px;
+    padding-top:15px;
     overflow:auto;
 }
 #main::-webkit-scrollbar { 

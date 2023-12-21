@@ -48,6 +48,18 @@ body{
     height: 65%;
     margin-left:5%;
     margin-top: 1%;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+#searchBoxInput{
+    width: 95%;
+    height: 100%;
+    font-size: 15px;
+}
+#searchBoxInput:focus{
+    outline-width: 0;
 }
 #searchButton{
     height:70%;
