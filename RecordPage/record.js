@@ -9,10 +9,13 @@ for (let i=0; i<pageButton.length;i++){
     }
 }
 
+const date = new Date();
+$("#date").value = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
 
 //탐조 위치: 쓰는 글에 따라 배경 흰색 부분이 같이 커지는 코드
 function resizeInput() {
-    this.style.width = (this.value.length+8) + "ch";
+    if (this.value != 0)
+        this.style.width = (this.value.length + 5) + "em";
 }
 const place = $("#place");
 place.addEventListener("input",resizeInput);
@@ -84,7 +87,10 @@ $(".add")
     .addEventListener("click",(e)=>{
         //- 버튼을 누르면 로그가 삭제되는 코드
         if (e.target.className == "deletebutton" && document.querySelectorAll(".birdFrame").length>1){
-            e.target.closest(".birdFrame").remove();
+            e.target.closest(".birdFrame").classList.add("swipeLeft");
+            setTimeout(function () {
+                e.target.closest(".birdFrame").remove();
+            }, 350);
         }
         if (e.target.className == "file"){    
             //파일 버튼 누르면 인풋 파일이 작동하는 코드

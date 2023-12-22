@@ -77,23 +77,41 @@ body{
 }
 #date{
     display:inline-block;
-    margin-top:5px;
+    height: 5vh;
+    font-size: 20px;
+    margin-top:5vh;
     margin-bottom:5px;
-    margin-left:2vw;
+    margin-left:40px;
     font-size:1vw;
+    background-color: transparent;
+    display: flex;
+    flex-flow: row-reverse;
 }
-#date:hover{
+#date:focus{
+    outline-width: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 15px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator:hover{
     cursor:pointer;
 }
 #place{
-    width:100px;
+    width:fit-content;
     display:inline-block;
-    margin-left:20px;
+    margin-left:40px;
     font-size:1vw;
-    background-color: white;
+    background-color: transparent;
+    border-bottom: solid black 1px;
 }
 #place:hover{
     cursor:pointer;
+}
+#place:focus{
+    outline-width: 0;
+}
+#place:focus::placeholder{
+    color: transparent;
 }
 .birdFrame{
     width:60vw;
@@ -101,11 +119,26 @@ body{
     display:flex;
     align-items: center;
     justify-items: center;
-    background-color:#FFF4C3;
+    background-color:#FFFDF3;
     margin:20px auto;
     padding-left:20px;
     padding-right:20px;
     border-radius:10px;
+    box-shadow: -3px 3px 3px 0px rgba(244,241,226,0.75);
+    -webkit-box-shadow: -3px 3px 3px 0px rgba(244,241,226,0.75);
+    -moz-box-shadow: -3px 3px 3px 0px rgba(244,241,226,0.75);
+    animation: slideUp 0.5s forwards;
+}
+@keyframes slideUp{
+    from{transform:translateY(100vh);}
+    to{transform:translateY(0);}
+}
+.swipeLeft{
+    animation: slideLeft 0.5s forwards;
+}
+@keyframes slideLeft{
+    from{transform:translateX(0);}
+    to{transform:translateX(-100vw);}
 }
 .info{
     display:inline-block;
@@ -117,26 +150,35 @@ body{
     display:inline-block;
     border-radius:15px;
     padding-left:2%;
-    background-color:#9BCC8F;
+    border: black solid 1px;
 }
 .birdName{
-    width:24vw;
-    border-radius:5px;
+    width: 95%;
+    background-color: transparent;
+}
+.birdName:focus::placeholder{
+    color: transparent;
+}
+.birdName:focus{
+    outline-width: 0;
 }
 .numOfBirds{
     width:6vw;
     height:28px;
-    display:inline-block;
-    border-radius:5px;
+    display:block;
+    margin-top: 1vh;
     padding-left:2%;
-    background-color:#9BCC8F;
+    border-bottom: grey solid 1px;
 }
 .birdNum{
     width:3vw;
 }
+.birdNum::-webkit-inner-spin-button, 
+.birdNum::-webkit-outer-spin-button {  
+   opacity: 1;
+}
 .unit{
     display:inline-block;
-    color:white;
 }
 .birdNameSubmit{
     float:right;
@@ -160,6 +202,8 @@ body{
     width:3vw;
     height:3vw;
     margin-left:2vw;
+    position:relative;
+    z-index:10;
 }
 #addButton:hover{
     cursor:pointer;
@@ -205,20 +249,28 @@ body{
 }
 
 .explanation{
-    display:inline-block;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
     width:33vw;
-    height:20vh;
+    height:14vh;
     margin-top:15px;
-    padding-left:2%;
-    padding-top:2%;
     border-radius:10px;
-    background-color: #9BCC8F;
+    border: black solid 1px;
+    backdrop-filter: blur(5px);
 }
 .write{
     width:97%;
-    height:88%;
-    border-radius: 10px;
-    resize:none;
+    height:80%;
+    background-color: rgba(0, 0, 0, 0.02);
+    backdrop-filter: blur(5px);
+    resize: none;
+}
+.write:focus{
+    outline-width: 0;
+}
+.write:focus::placeholder{
+    color:transparent;
 }
 .img{
     display:inline-block;
@@ -234,6 +286,9 @@ body{
     background-color: #DAE2B6;
     margin-top:3vh;
     margin-left:2vw;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
 }
 .fileLabel:hover{
     cursor:pointer;

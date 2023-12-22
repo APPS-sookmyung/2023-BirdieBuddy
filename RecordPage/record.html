@@ -13,27 +13,27 @@
     </head>
     <body>
         <div id="mainFrame">
-            <image src="../mascot.png" id="searchMascot"></image>
+            <image src="./binoculars.png" id="searchMascot"></image>
             <div id="pageName"><p>탐조 추가</p></div>
             <div id="main">
                 <div id="birdwatchBasicInfo">
-                    <img src="binoculars.png" id="binocular">
-                    <p style="display: inline; font-size: 20px; margin-left:10px;">오늘의 탐조 자랑</p>
                     <input type="date" id="date">
-                    <input type="text" id="place" placeholder="탐조 위치">
+                    <div id="location">
+                        <input type="text" id="place" placeholder="🏴    탐조 위치" autocomplete="off" spellcheck="false">
+                    </div>
                 </div>
                 <div class="add">
                     <div class="birdFrame">
                         <div class="info">
                             <div class="addBird">
-                                <input type="text" class="birdName">            
+                                <input type="text" class="birdName" spellcheck="false" autocomplete="off" placeholder="새 이름">            
                             </div>
                             <div class="numOfBirds">
                                 <input type="number" class="birdNum">            
                                 <p class="unit">마리</p>
                             </div>
                             <div class="explanation">
-                                <textarea class="write"></textarea>
+                                <textarea class="write" spellcheck="false" autocomplete="off" placeholder="새 설명"></textarea>
                             </div>
                         </div>
                         <div class="img">
