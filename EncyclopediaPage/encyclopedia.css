@@ -86,27 +86,26 @@ body{
     margin-right:5%;
     margin-left:5%;
     margin-top:20px;
-    display:grid;
-    grid-template-areas: 
-    "pic name"
-    "pic explain"
-    "pic explain"
-    "pic explain";
 }
 .birdInfo a{
     color:black;
     text-decoration: none;
 }
 .birdPic{
+    display: inline-block;
     width:100px;
     height:100px;
     grid-area:pic;
     margin-right:20px;
 }
+.birdText{
+    display: inline-block;
+    width: 50vw;
+}
 .birdName{
-    grid-area:name;
     height:20px;
-    width:50vw;
+    width:100%;
+    text-align: left;
     margin-bottom:15px;
     font-weight:bold;
     font-size:17px;
@@ -116,10 +115,9 @@ body{
     margin-left:5px;
 }
 .birdExplanation{
-    height:80%;
+    height:4em;
     width:98%;
     margin-right:100px;
-    grid-area:explain;
     overflow-y:hidden;
 }
 #line{
