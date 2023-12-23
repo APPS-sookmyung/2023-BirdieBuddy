@@ -28,94 +28,71 @@ body{
     padding-top: 2%;
     z-index:2;
 }
+#birdIntroduction{
+    width:100%;
+    height: 30vh;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    margin-bottom: 2vh;
+}
+#birdName{
+    height:25vh;
+    width:90%;
+    padding-right:3vw;
+    background-color: rgba(105, 105, 105, 0.7);
+    color:white;
+    text-align:right;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+}
+.birdName:hover{
+    cursor:default;
+}
+.write:hover{
+    cursor: default;
+}
+#birdName>h3{
+    font-size:50px;
+}
+#edit{
+    color:greenyellow;
+    margin-top:3vh;
+}
+#edit:hover{
+    cursor:pointer;
+}
+.add{
+    padding-bottom:4vh;
+}
 #searchMascot{
     position:absolute;
-    left:30%;
+    left:4vw;
     top:4%;
     width:5%;
 }
-#pageName{
-    width:30vw;
-    height:40px;
-    margin:0 auto;
-    border-radius: 10px;
-    background-color:#CCD6A6;
-    color:white;
-    font-size:25px;
-    text-align: center;
-}
 #main{
     width:85%;
-    height:73.8%;
+    height:82%;
     display:grid;
-    grid-template-areas:
-        "a"
-        "b"
-        "c";
-    grid-template-rows:1fr 8fr 2fr;
     background-color: #FFFBE9;
     border-radius: 20px;
     margin-top: 1%;
     margin-left:auto;
     margin-right:auto;
-    padding-top:3vh;
+    padding-top:15px;
     overflow:auto;
 }
 #main::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
-#birdwatchBasicInfo{
-    grid-area:"a";
-}
-.add{
-    grid-area:"b";
-}
-#binocular{
-     width:2vw;
-     margin-left:2vw;
-     display:inline-block;
-}
-#date{
-    display:inline-block;
-    height: 5vh;
-    font-size: 20px;
-    margin-top:5vh;
-    margin-bottom:5px;
-    margin-left:40px;
-    font-size:1vw;
-    background-color: transparent;
-    display: flex;
-    flex-flow: row-reverse;
-}
-#date:focus{
-    outline-width: 0;
-}
-input[type="date"]::-webkit-calendar-picker-indicator {
-    margin-right: 15px;
-}
-input[type="date"]::-webkit-calendar-picker-indicator:hover{
-    cursor:pointer;
-}
-#place{
-    width:fit-content;
-    display:inline-block;
-    margin-left:40px;
-    font-size:1vw;
-    background-color: transparent;
-    border-bottom: solid black 1px;
-}
-#place:hover{
-    cursor:pointer;
-}
-#place:focus{
-    outline-width: 0;
-}
-#place:focus::placeholder{
-    color: transparent;
-}
 .birdFrame{
-    width:60vw;
-    height:32vh;
+    width:55vw;
+    height:35vh;
     display:flex;
     align-items: center;
     justify-items: center;
@@ -124,9 +101,9 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
     padding-left:20px;
     padding-right:20px;
     border-radius:10px;
-    box-shadow: -3px 3px 3px 0px rgba(244,241,226,0.75);
-    -webkit-box-shadow: -3px 3px 3px 0px rgba(244,241,226,0.75);
-    -moz-box-shadow: -3px 3px 3px 0px rgba(244,241,226,0.75);
+    box-shadow: 0px 0px 20px 3px rgba(244,241,226,1);
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(244,241,226,1);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(244,241,226,1);
     animation: slideUp 0.5s forwards;
 }
 @keyframes slideUp{
@@ -163,7 +140,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
     outline-width: 0;
 }
 .numOfBirds{
-    width:6vw;
+    width:fit-content;
     height:28px;
     display:block;
     margin-top: 1vh;
@@ -172,6 +149,12 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
 }
 .birdNum{
     width:3vw;
+}
+.birdNum:hover{
+    cursor:default;
+}
+.birdFrame:hover{
+    cursor:default;
 }
 .birdNum::-webkit-inner-spin-button, 
 .birdNum::-webkit-outer-spin-button {  
@@ -190,69 +173,30 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
 .birdNameSubmit:hover{
     cursor:pointer;
 }
-.deletebutton{
-    width:1vw; 
-    margin-left:22px;
-    float:right;
-}
-.deletebutton:hover{
-    cursor:pointer;
-}
-#addButton{
-    width:3vw;
-    height:3vw;
-    margin-left:2vw;
-    position:relative;
-    z-index:10;
-}
-#addButton:hover{
-    cursor:pointer;
-}
-#addRecordBirdButton{
-    width:6vw;
-    float:right;
-    margin-right:2vw;
-}
-#addRecordBirdButton:hover{
-    cursor:pointer;
-    width:7vw;
-    content:url("addRecordBirdButton2.png");
-}
-#imgFullScreen{
-    position:fixed;
-    display:none;
+.img{
+    display:flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    z-index:999;
-    width:100vw;
-    height:100vh;
-    top:0;
-    left:0;
-    background-color:rgba(0,0,0,0.6);
+    flex-direction: column;
 }
-#fsPrevImg{
-    width:2vw;
-    height:auto;
-    margin-left:1vw;
+.prevImg{
+    display: inline-block;
+    width:0.6vw;
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    margin-top: 4px;
 }
-#fsNextImg{
-    width:2vw;
-    height:auto;
-    margin-right:1vw;
+.nextImg{
+    display: inline-block;
+    width:0.6vw;
+    margin-left: 0.5vw;
+    margin-top: 4px;
 }
-#fsPrevImg:hover, #fsNextImg:hover{
-    cursor:pointer;
-}
-#fsImg{
-    height:90vh;
-    width:auto;
-}
-
 .explanation{
     display:inline-flex;
     justify-content: center;
     align-items: center;
-    width:33vw;
+    width:28vw;
     height:14vh;
     margin-top:15px;
     border-radius:10px;
@@ -272,11 +216,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
 .write:focus::placeholder{
     color:transparent;
 }
-.img{
-    display:inline-block;
-    width:25vw;
-    height:15vw;
-}
 .fileLabel{
     display:flex;
     align-items: center;
@@ -291,37 +230,67 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
     -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
 }
 .fileLabel:hover{
-    cursor:pointer;
+    cursor:default;
 }
 .photo{
     display:block;
-    width:2.5vw; 
-    height:2.5vw;
+    height:10vw;
     margin:0vw auto;
 }
 .file{
     display: none;
 }
-.prevImg{
-    display: inline-block;
-    width:0.6vw;
-    margin-left: 13.2vw;
-    margin-top: 4px;
+.hoverCursorPointer:hover{
+    cursor:pointer;
 }
-.nextImg{
-    display: inline-block;
-    width:0.6vw;
+.hoverCursorText:hover{
+    cursor:text;
+}
+.arrow{
+    margin-top:1vh;
 }
 .count{
+    display:inline-block;
+    font-size:10px;
+    margin-left:1vw;
+    margin-top:1vh;
+}
+.deletebutton{
+    width:1vw; 
+    margin-left:10px;
+    margin-right:10px;
     float:right;
-    position:relative;
-    font-size:7px;
+    display:none;
+}
+.deletebutton:hover{
+    cursor:pointer;
 }
 #buttons{
-    grid-area:"c";
     height: 4vh;
-    display:block;
+    display:none;
+    align-items: center;
+    margin-top: 20px;
     margin-bottom:70px;
+}
+#addButton{
+    width:3vw;
+    height:3vw;
+    margin-left:5vw;
+    position:relative;
+    z-index:10;
+}
+#addButton:hover{
+    cursor:pointer;
+}
+#addRecordBirdButton{
+    width:6vw;
+    float:right;
+    margin-right:5vw;
+}
+#addRecordBirdButton:hover{
+    cursor:pointer;
+    width:7vw;
+    content:url("./img/addRecordBirdButton2.png");
 }
 #line{
     float:none;
@@ -376,7 +345,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
     position:absolute;
     right:8%;
     margin-top:10%;
-    z-index:10;
+    z-index:999;
     font-size:10px;
     text-align:right;
     font-family:'omyu_pretty';

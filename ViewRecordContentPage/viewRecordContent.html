@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../StartPage/birdOfKoreaLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="viewRecordContent.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mainFrame">
+            <image src="../mascot.png" id="searchMascot"></image>
+            <div id="main">
+                <div id="birdIntroduction">
+                    <div id="birdName">
+                        <h3>2023.12.22</h3>
+                        <p id="englishName">공릉천</p>
+                        <p id="edit">Edit</p>
+                    </div>
+                </div>
+                <div class="add">
+                    <div class="birdFrame">
+                        <div class="info">
+                            <div class="addBird">
+                                <input type="text" class="birdName" spellcheck="false" autocomplete="off" readonly value="노랑때까치">            
+                            </div>
+                            <div class="numOfBirds">
+                                <input type="number" class="birdNum" readonly value="5">            
+                                <p class="unit">마리</p>
+                            </div>
+                            <div class="explanation">
+                                <textarea class="write" spellcheck="false" autocomplete="off" readonly>매우 귀여웠음</textarea>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <label class="fileLabel">
+                                <img src="./img/노랑때까치1.jpg" class="photo">
+                                <input type="file" class="file" multiple="multiple" accept=".jpg, .jpeg, .png" disabled>
+                            </label>
+                            <div class="arrow">
+                                <p class="count"><span class="number">1</span>/<span class="total">0</span></p>
+                                <img src="./img/leftarrow.png" class="prevImg">
+                                <img src="./img/rightarrow.png" class="nextImg">
+                            </div>
+                        </div>
+                        <img src="./img/deletebutton.png" class="deletebutton">
+                    </div>  
+                    <div class="birdFrame">
+                        <div class="info">
+                            <div class="addBird">
+                                <input type="text" class="birdName" spellcheck="false" autocomplete="off" readonly value="노랑때까치">            
+                            </div>
+                            <div class="numOfBirds">
+                                <input type="number" class="birdNum" readonly value="5">            
+                                <p class="unit">마리</p>
+                            </div>
+                            <div class="explanation">
+                                <textarea class="write" spellcheck="false" autocomplete="off" readonly>매우 귀여웠음</textarea>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <label class="fileLabel">
+                                <img src="./img/노랑때까치1.jpg" class="photo">
+                                <input type="file" class="file" multiple="multiple" accept=".jpg, .jpeg, .png" disabled>
+                            </label>
+                            <div class="arrow">
+                                <p class="count"><span class="number">1</span>/<span class="total">0</span></p>
+                                <img src="./img/leftarrow.png" class="prevImg">
+                                <img src="./img/rightarrow.png" class="nextImg">
+                            </div>
+                        </div>
+                        <img src="./img/deletebutton.png" class="deletebutton">
+                    </div> 
+                </div>
+                <div id="buttons">
+                    <img src="./img/addButton.png" id="addButton"> 
+                    <img src="./img/addRecordBirdButton.png" id="addRecordBirdButton"> 
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="buttonLine">
+                <button class="pageButton" onclick="location.href = '../EncyclopediaPage/encyclopedia.html'">도감</button>
+                <button class="pageButton" onclick="location.href = '../AskPage/ask.html'">동정</button>
+                <button class="pageButton" onclick="location.href = '../RecordPage/record.html'" id="currentButton">기록</button>
+                <button class="pageButton" onclick="location.href = '../NewsPage/news.html'">새뉴스</button>
+                <button class="pageButton" onclick="location.href = '../BadgePage/badge.html'">배지</button>
+                <button class="pageButton" onclick="location.href = '../MyPage/mypage.html'">마이페이지</button>
+                <div id="settings">
+                    <a href="../StartPage/start.html"><img src="../logout.png" class="logout"></a>
+                    <img src="../notification.png" class="notification">
+                </div>
+            </div>
+        </div>
+        <div id="choose">
+            <div onclick="location.href = '../RecordPage/record.html'">
+                <span class="tabLabel">추가</span>
+                <input type="image" src="../orangeTab.png" class="tab" value="안녕">
+            </div>
+            <div onclick="location.href = '../viewRecordPage/viewRecord.html'">
+                <span class="tabLabel">기록</span>
+                <input type="image" src="../yellowTab.png" class="tab" id="currentTab" >
+            </div>
+        </div>
+        <script src="./viewRecordContent.js" type="module"></script>
+    </body>
+</html>

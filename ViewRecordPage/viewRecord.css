@@ -53,11 +53,24 @@ body{
     margin-top: 1%;
     margin-left:auto;
     margin-right:auto;
-    padding-top:3vh;
+    padding-top:6vh;
     overflow:auto;
 }
 #main::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
+}
+.record{
+    margin: 4vh 3vw;
+}
+.record p{
+    display: inline-block;
+}
+.recordDate{
+    margin-left: 1vw;
+    color:#5EB3E2;
+}
+.recordPlace{
+    margin-left: 2vw;
 }
 #line{
     float:none;
