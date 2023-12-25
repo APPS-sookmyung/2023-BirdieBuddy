@@ -15,7 +15,7 @@ function concernExplain(){
         let scale = window.innerWidth/initWindowSize;
         if (!isExplain){
             $("#concern").insertAdjacentHTML("afterend", `
-            <div id="concernSideNote" style="top:${concernCoords.top-birdnameCoords.top+40}px; transform:translateX(${(concernCoords.left-birdnameCoords.left)*scale - 135}px);">
+            <div id="concernSideNote" style="top:${concernCoords.top-birdnameCoords.top+150}px; transform:translateX(${(concernCoords.left-birdnameCoords.left)*scale - 135}px);">
                 <p><span style="color:navy">EX</span>: 절멸</p>
                 <p><span style="color:purple">EW</span>: 야생 절멸</p>
                 <p><span style="color:red">CR</span>: 위급</p>
