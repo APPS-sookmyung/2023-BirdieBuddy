@@ -1,0 +1,760 @@
+{
+    "data": [
+        {
+            "name": "참새",
+            "sci_name": "Passer montanus",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2F20FJw0hbctdP5cPTESW2C34CRgONUoUgO3egEJlO%3Ft%3D1461213347000",
+            "content": "부리는 짧고 단단해서 곡식을 쪼아 먹기에 알맞다.\n꽁지깃은 날 때 방향을 잡는 역할을 한다.\n여름에는 해로운 곤충을 잡아먹어 사람에게 도움을 주지만, 가을에는 농작물에 피해를 주기도 한다.\n모래와 물을 이용해 목욕하는 것을 좋아한다. 부리로 물을 쪼아 몸에 바르기도 하고 물구나무서기를 하는 등 목욕을 통해 몸에 붙어 있는 진드기, 먼지, 비듬 등을 털어낸다.\n두 발로 뛰면서 땅 위에 내려와 먹이를 찾거나 농작물의 알곡을 먹는다.\n한쪽 눈으로 먹이를 찾아 낸 다음 양쪽 눈을 사용해 먹이를 보며 쪼아 먹는다.\n번식이 끝나고 가을이 되면 무리를 이루어 집단으로 겨울을 난다.\n참새는 산림성 조류를 관찰할 때, 발견한 새의 크기를 비교하는 ‘자’와 같은 역할을 한다고 하여 ‘자새’라고도 불린다.",
+            "size_tag": [1],
+            "habitats": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "name": "방울새",
+            "sci_name": "Carduelis sinica",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2F4pNI2h01zKO6nSwb1FqKc7sTlovweDi8RDwWVgaG%3Ft%3D1461213347000",
+            "content": "전체적으로 황갈색으로 굵은 부리를 가지고 있으며, 식물씨앗 등을 먹기에 알맞은 부리를 가지고 있다.\n번식기가 되면 수컷은 높은 나뭇가지에 앉아 목을 좌우로 흔들면서 또르르르륵, 또르르르륵하고 방울소리를 낸다.\n번식이 끝난 가을과 겨울에는 20-30마리의 작은 무리를 지어요. 간혹 전깃줄에 수백개체가 앉아있는 것을 볼 수 있다.",
+            "size_tag": [1],
+            "habitats": [
+                1,
+                3,
+                5
+            ]
+        },
+        {
+            "name": "딱새",
+            "sci_name": "Phoenicurus auroreus",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FqRpl0FuCbdRzjMWgP5oGvrZgd4h1EJ0Ku8cX4Oee%3Ft%3D1461213346000",
+            "content": "도시 변두리나 농촌 등 인가 근처에서 서식한다.\n단독으로 생활하며 관목에 앉아 꼬리를 까딱까딱 상하로 흔들며 운다.\n관목 꼭대기, 바위 위, 지붕 위, 담장 위 등 낮은 곳 또는 전망이 좋은 장소를 택하여 앉는다.\n먼 거리나 고공을 날지 않으며 단거리를 낮은 고도로 비행한다.\n지상에 내려와 뛰어다니며 먹이를 찾는 경우도 있으나 대부분 오래 머물지 않고 날아오른다.",
+            "size_tag": [1],
+            "habitats": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "동박새",
+            "sci_name": "Zosterops japonicus",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FuwA7B5TacvcvhTiRnmedaaJ0dZDlF3wZmbJl0EuT%3Ft%3D1461213347000",
+            "content": "눈 주위에 흰색 고리가 특징이며, 이 새 이름의 유래(영명)이기도 하다.\n겨울에는 산지와 평지로 이동하여 무리 행동을 하는 것을 볼 수 있다.\n꽃의 꿀을 매우 좋아하기 때문에 개화시기에 주로 꽃 근처에서 많이 보이며, 봄에는 좋아하는 꽃의 꿀을 찾아 이동하는 모습도 확인된다.\n국내에서는 주로 따뜻한 남쪽지역에서 관찰되는 종이다.\n제주 서귀포시에서는 시를 상징하는 새로 지정되어 있으며, 동백나무 인근에서 많이 산다고 하여 ‘동박생이’라는 이름을 가지고 있기도 하다.\n온순하고 울음소리가 곱고 청아하여, 과거에는 일본에 사육용으로 밀반출되기도 했었다.",
+            "size_tag": [1],
+            "habitats": [
+                2,
+                3
+            ]
+        },
+        {
+            "name": "황조롱이",
+            "sci_name": "Falco tinnunculus Common Kestrel",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FlydspTgB3U3zXmVa1Da2lnRRI3OuiWdDtZAgsr57%3Ft%3D1456986091000",
+            "content": "극지방을 제외하고 유라시아에서 아프리카, 아시아에 분포한다. 국내에서는 전국적으로 흔하게 서식하는 텃새다.",
+            "size_tag": [3],
+            "habitats": [
+                1,
+                3,
+                5
+            ]
+        },
+        {
+            "name": "물총새",
+            "sci_name": "Alcedo atthis",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2F53FF3566034D4D0002%3Ft%3D1425373168000",
+            "content": "부리는 길고 뾰족해 물고기를 잡기에 알맞다.\n몸에 비해 머리가 크고, 다리는 짧고 붉은색이다.\n하천이나 강가에 단독으로 일정한 장소에서 생활한다.\n나뭇가지나 수초, 돌 등에 앉아서 물고기의 움직임을 관찰하다가 다이빙하여 물고기를 잡는다.\n잡은 물고기는 나뭇가지나 바위에 부딪혀 기절 시킨 후 먹는다.\n먹이를 먹을 때는 항상 머리부터 먹는다.\n번식기에 수컷은 물고기를 잡아 기절시킨 후 부리에 물고 춤을 추며, 암컷에게 전달해주는 구애 행동을 한다.\n물총새는 물고기 잡는 호랑이라는 별명을 가지고 있으며, 우리나라에서 여름철새이지만 일부는 월동하며 텃새화 되고 있다.",
+            "size_tag": [1],
+            "habitats": [
+                4,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "청딱다구리",
+            "sci_name": "Picus canus",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FGvGmDWsj8xsGD6pK6SyM4wjUG6QRC6gZ9fwm1w79%3Ft%3D1454032269000",
+            "content": "우리나라 공원이나 야산, 산림 지대에서 흔히 볼 수 있는 텃새이다.\n단단한 꽁지를 이용해서 나무줄기 등에 세로로 앉을 수 있다.\n부리로 나무를 두드려 구멍을 낸 후 긴 혀를 이용해서 나무 안의 벌레들을 잡아먹는다.\n무른 나무나 썩은 나무를 이용해 줄기에 구멍을 파고 그 안에 둥지를 만든다.\n번식기에는 속이 비고 단단한 나무나 함석지붕 등을 부리로 두드려 ‘두루루룩 두루루루룩’ 하는 드럼 치는 듯한 소리를 낸다.\n다른 딱따구리와는 달리 전봇대나 전깃줄, 관목이나 땅 위에도 잘 앉는다.\n땅 위에서 개미를 즐겨먹는 습성이 있다.\n높은 음절에서 낮은 음절로 ‘뾰 뾰 뾰 뾰’ 하는 울음소리를 낸다.",
+            "size_tag": [3],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "오색딱다구리",
+            "sci_name": "Dendrocopos major",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FP1zR8y9FSF8jKzlvYgm3z5UjXSrN2p5GAI4Hvv9e%3Ft%3D1461213347000",
+            "content": "한국 어디에서든지 관찰이 가능하고 딱따구리 중에서 가장 흔한 새이다.\n단단한 꽁지를 이용해서 나무줄기 등에 세로로 앉을 수 있다.\n부리로 나무를 두드려 구멍을 낸 후 긴 혀를 이용해서 나무 안의 벌레들을 잡아먹는다.\n무른 나무나 썩은 나무를 이용해 줄기에 구멍을 파고 그 안에 둥지를 만든다.\n번식기에는 속이 비고 단단한 나무 등을 부리로 두드려 ‘두루루룩 두루루루룩’ 하는 드럼 치는 듯한 소리를 낸다.",
+            "size_tag": [2],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "큰오색딱다구리",
+            "sci_name": "Dendrocopos leucotos",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FldyTdZAaJlzDbjSlJ9NNwTz3hnvLvxFIEWGo14Sw%3Ft%3D1461213346000",
+            "content": "우리나라 공원이나 야산, 산림 지대에서 드물게 볼 수 있는 텃새이다.\n연중 같은 장소에서 생활한다.\n단단한 꽁지를 이용해서 나무줄기 등에 세로로 앉을 수 있다.\n부리로 나무를 두드려 구멍을 낸 후 긴 혀를 이용해서 나무 안의 벌레들을 잡아먹는다.\n무른 나무나 썩은 나무를 이용해 줄기에 구멍을 파고 그 안에 둥지를 만든다.\n번식기에는 속이 비고 단단한 나무나 함석지붕 등을 부리로 두드려 ‘두루루룩 두루루루룩’ 하는 드럼 치는 듯한 소리를 낸다.",
+            "size_tag": [2],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "쇠딱다구리",
+            "sci_name": "Dendrocopos kizuki",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FtnCTosPhh7lq6cNwvin8s73OyAsqaifyQHukcevD%3Ft%3D1461213346000",
+            "content": "우리나라 공원이나 야산, 산림 지대에서 흔하게 볼 수 있는 텃새이다.\n우리나라에서 가장 작은 딱따구리이다.\n단단한 꽁지를 이용해서 나무줄기 등에 세로로 앉을 수 있다.\n부리로 나무를 두드려 구멍을 낸 후 긴 혀를 이용해서 나무 안의 벌레들을 잡아먹는다.\n무른 나무나 썩은 나무를 이용해 줄기에 구멍을 파고 그 안에 둥지를 만든다.\n겨울에는 박새 무리와 같이 몰려다니는 것을 흔하게 관찰할 수 있다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "아물쇠딱다구리",
+            "sci_name": "Dendrocopos canicapillus Grey-capped Pygmy Woodpecker",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FaLXhuAmeqHo1UAC8d0U0fHcLHQnJbnc55CFSAd5D%3Ft%3D1456986095000",
+            "content": "중국, 아무르, 한국, 대만, 인도차이나반도, 말레이시아, 수마트라, 인도 북부, 네팔, 파키스탄 동북부 등 서식 범위가 넓다. 북한의 함북 고산지대에서 번식한다. 남한에서는 매우 드문 텃새이며, 매우 드문 겨울철새다.",
+            "size_tag": [2],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "직박구리",
+            "sci_name": "Hypsipetes amaurotis",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2F59B3sQfyDkMEvKArRakzsDqKD11U3fYURSAKluw9%3Ft%3D1461213346000",
+            "content": "주로 나무에서 생활하며, 땅 위에 거의 내려오지 않는다.\n여름에는 암수가 함께 생활하고, 겨울에는 무리를 지어 생활한다.\n식물의 열매를 매우 좋아하며, 봄에는 식물의 꽃을 따먹고, 여름에는 곤충을 잡아먹는다.\n날 때 날개를 펄럭이며 날다가 날개를 접고 파도모양으로 난다.\n시끄럽게 울어대며, 무리지어 까치를 공격하기도 한다.\n가을철 과수농가의 배, 사과, 감 등에 피해를 주기도 해 과수원 유해조류로 알려져 있다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "바다직박구리",
+            "sci_name": "Monticola solirarius",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FTualS9HVma4DEJXmOLhUt2PZt64dNtZLlfn3C2Qz%3Ft%3D1461213346000",
+            "content": "주로 해안 바위절벽에 살고 내륙으로는 잘 들어가지 않으나 간혹 중부 산악지대에서도 관찰된다.\n암수가 단독으로 생활하며 일정한 세력권을 점유한다.\n바위 절벽, 암초, 벼랑, 해안의 항구 등을 뛰어 다니면서 먹이를 구한다.\n사람이 사는 집의 지붕 위에서도 곧잘 앉아 울며, 암컷도 수컷과 비슷하게 울 때가 있다.\n비행 시 저공을 일직선으로 비행하지만 높은 장소에 앉아 있을 경우 활강할 수도 있다.",
+            "size_tag": [2],
+            "habitats": [
+                2
+            ]
+        },
+        {
+            "name": "뿔논병아리",
+            "sci_name": "Podiceps cristatus Great Crested Grebe",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FCNcCK1QofVFWviU2A5h8awRG41zp6MCzxCWktMxq%3Ft%3D1456986095000",
+            "content": "유라시아대륙 중부, 아프리카, 오스트레일리아, 뉴질랜드에 분포하고, 유라시아 번식집단은 겨울에 남쪽으로 이동한다. 지리적으로 3아종으로 나눈다. 국내에서는 흔한 겨울철새로 전국 각지에 찾아온다. 1996년 충남 대호방조제 주변에서 번식이 확인된 이후, 경기 양평 양수리(2001년), 서울 경안천(2005년) 등 전국 각지에서 번식이 확인되고 있다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                7
+            ]
+        },
+        {
+            "name": "붉은머리오목눈이",
+            "sci_name": "Paradoxornis webbianus",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FsnajvBUEsUgcOqZ8xiH077agvpYSsrjyMeffjlWq%3Ft%3D1461213347000",
+            "content": "동작이 재빠르고 움직일 때 긴 꽁지를 좌우로 흔드는 버릇이 있다.\n덤불, 갈대밭, 관목, 잡초가 자라는 지역에서 여러 마리가 무리지어 휘파람 소리를 내며 질서 있게 움직인다.\n주로 육지에서 관찰되며, 멀리 떨어진 도서지역에서는 관찰하기 어렵다.\n뻐꾸기가 탁란하는 숙주새로 국내에 찾아오는 뻐꾸기의 대부분이 붉은머리오목눈이 둥지에 탁란을 한다.",
+            "size_tag": [1],
+            "habitats": [
+                3,
+                5,
+                6
+            ]
+        },
+        {
+            "name": "오목눈이",
+            "sci_name": "Aegithalos caudatus",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FVPY5X2nJeRNathxoA1jwxGh3WeSsGG4lSyiQG2I8%3Ft%3D1461213347000",
+            "content": "사람이 사는 주변 산림에 서식하고, 무리를 지어 이동하며 먹이활동을 한다.\n한자리에 오래 머물지 않고 쉴 새 없이 울음소리를 내며 나무와 나무사이를 이동한다.\n번식기 외에는 무리를 지어 생활하며, 박새류와 무리지어 다니기도 한다.\n땅 위에 내려앉는 일은 극히 드물고, 비행시 불규칙한 비행을 한다.",
+            "size_tag": [1],
+            "habitats": [
+                1,
+                3,
+                5
+            ]
+        },
+        {
+            "name": "동고비",
+            "sci_name": "Sitta europaea",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FHvHlIvdQxFk5DOF3uouWME9IrmgRaXgg62SkX4he%3Ft%3D1461213347000",
+            "content": "낙엽 활엽수림에서 서식하며 혼자 또는 암수가 함께 생활하고, 번식 후에는 다른 종과 함께 무리를 형성한다.\n여름에는 거미류나 곤충류를 잡아먹고 겨울에는 식물의 씨앗이나 나무열매를 먹는다.\n나무 위의 생활이 주가 되며, 나무줄기나 가지를 교묘하게 올라가고 내려오면서 먹이를 찾는다.\n돌아다니는 범위나 시각은 거의 일정하고, 같은 시각에 같은 무리들이 같은 장소에서 만나는 일이 종종 있다.\n대체로 지상으로 잘 내려오지 않으나 때로는 땅위에서 양쪽 다리를 함께 모아 뛰거나 걸으며, 물을 먹을 때도 있다.",
+            "size_tag": [1],
+            "habitats": [
+                1,
+                2,
+                3,
+                5,
+                6
+            ]
+        },
+        {
+            "name": "멧비둘기",
+            "sci_name": "Streptopelia orientalis",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FJNTs9fQIVUBQaOltxyohBkGmLa0LRegChgL3i0oQ%3Ft%3D1461213347000",
+            "content": "짝짓기를 할 때 수컷은 목 부분의 깃털을 한껏 부풀려 암컷에게 구애를 한다.\n이가 없는 멧비둘기는 뱃속의 모래주머니가 있어 먹이와 함께 먹는 모래, 돌맹이들이 이곳에서 먹이를 부수어 소화를 도운다.\n몸에 비해 머리가 작고, 목을 위, 아래로 빠르게 흔들면서 걸어 다닌다.\n번식기에는 숲에서 주로 생활하며, 번식이 끝난 뒤에는 농경지 주변에서 무리를 지어 논, 밭에 내려 앉아 먹이를 구한다.\n어미새는 목에 있는 모이주머니 안쪽 벽에서 생성되는 영양제인 ‘비둘기젖(피존밀크)’을 부화한 새끼에게 먹이며, 새끼는 이 젖을 먹고 10일 정도가 지난 후부터 씨앗 등의 딱딱한 먹이를 먹는다. 비둘기젖은 암컷과 수컷 모두 나온다.\n대부분의 조류는 물을 마실 때 물을 부리에 물고 목과 부리를 위로 향한 다음 물을 마시는데 반해, 멧비둘기는 부리를 아래로 향한 채 물속에 부리를 넣어 물을 마신다.\n볍씨, 곡물 등을 선호하는 탓에 농작물에 피해를 주기도 해서 유해조수로 포획되기도 한다.",
+            "size_tag": [3],
+            "habitats": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "곤줄박이",
+            "sci_name": "Parus varius",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2Fp1JwBuJMvd2NLVqTr01f5dRkKtKnjdqVtPWZbw2P%3Ft%3D1461213347000",
+            "content": "번식기에는 암수가 함께 생활하며, 번식이 끝나면 소수의 무리로 몰려다니거나 다른 종들과 섞여 생활한다.\n주로 나방, 거미 등 곤충을 주식으로 하지만 먹이가 부족한 겨울철에는 식물의 열매나 사람이 제공해주는 인공먹이도 잘 먹는다.\n식물의 씨앗이나 열매를 두발로 쥐고 부리를 이용해 껍질을 깨뜨려 알맹이를 먹는다.\n사람의 접근이 빈번한 국립공원이나 절 등에 사는 개체는 손바닥에 땅콩이나 잣 등을 올려 놓고 가만히 있으면 날아와 먹는다.\n먹이를 돌 틈이나 나무 틈에 숨겨놓는 저장습성이 있다.\n일생동안 부부관계를 유지하는 일부일처제 종이다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "청둥오리",
+            "sci_name": "Anas platyrhynchos",
+            "image": "https://t1.daumcdn.net/thumb/R760x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2Fp1JwBuJMvd2NLVqTr01f5dRkKtKnjdqVtPWZbw2P%3Ft%3D1461213347000",
+            "content": "우리나라에 서식하는 오리류 중 가장 흔하게 관찰되는 종이며, 겨울철새이자 텃새이다.\n낮에는 주로 물이나 물가의 모래톱 등에서 먹이활동을 하거나 휴식을 하다가 해질녘에 농경지로 이동해 낱알 등을 먹는다.\n발쪽에 동맥과 정맥이 붙어있어 열교환 장치 역할을 해 추운 겨울 결빙된 호수의 얼음 위에서도 휴식을 취한다.\n곡식을 좋아하기 때문에 가을 추수기에는 농작물에 피해를 주기도 한다.\n이동 시기에는 시간당 약 88.5km를 이동한다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "댕기흰죽지",
+            "sci_name": "Aythya fuligula Tufted Duck",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2F3QFY4Ide8sK4J1JBHpPnRa04HMTy3TTz5NOJKZ8U%3Ft%3D1456986090000",
+            "content": "유라시아대륙 북부에서 번식하고, 유럽, 북아프리카, 인도, 중국 동부와 남부, 한국, 일본, 대만에서 월동한다. 국내에서는 흔한 겨울철새이며, 다소 흔한 나그네새다. 국내 월동 무리는 10,000개체 미만이다. 10월 초순에 도래하며, 4월 중순까지 관찰된다.",
+            "size_tag": [4],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "큰흰죽지",
+            "sci_name": "Aythya valisineria Canvasback",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FxqOK3cxB7w2kk9JpiW7s70hJkFB9mzM98VY2rLeB%3Ft%3D1456986092000",
+            "content": "알래스카에서 캐나다, 북아메리카 중서부에서 번식하고, 북아메리카 남부, 멕시코에서 월동한다. 겨울철에 낙동강, 천수만, 강릉 등지에서 몇 차례의 관찰기록만 있는 미조다. 국내에서는 단독으로 다른 흰죽지류 무리에 섞여 관찰된다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "저어새",
+            "sci_name": "Platalea minor Black-faced Spoonbill",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FNOE7PjRIKLjJyVsXtgIOv1hcnaI2Dqx0xeqErM4M%3Ft%3D1456986090000",
+            "content": "한반도 서해안의 무인도와 중국 요동반도의 일부 무인도에서 번식하며, 한국, 대만, 베트남, 홍콩, 일본 등지에서 월동한다. 국내에서는 제주도 성산포가 최대 월동지역이며, 40개체 미만이 월동한다.",
+            "size_tag": [6],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "검은머리물떼새",
+            "sci_name": "Haematopus ostralegus",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FoZIdYveEARoNhjvdUNfFL0pVCI9s9AR9oZoRwg4t%3Ft%3D1461213347000",
+            "content": "우리나라 해안가 주변에 서식하는 텃새로, 서해 일대에서 집단으로 월동하고, 번식기에는 강 하구나 해안, 섬의 땅 위에 둥지를 튼다.\n조개류를 먹을 때는 부리를 껍질 사이에 넣어 열거나 날아올라 바위 등 단단한 곳에 떨어뜨려 깨서 먹는다.\n둥지나 새끼근처에 천적이 나타나면 어미새는 소리를 내며 천적의 주위를 선회하는 행동을 해 천적의 시선을 다른 곳으로 옮김으로써 둥지 및 새끼를 보호한다.\n천연기념물 326호로 지정되어 있어요.",
+            "size_tag": [4],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "검은머리갈매기",
+            "sci_name": "Larus saundersi",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FOjq6LWQYjJaPoGrQ72JbKXVrXalLIQacxFF5SU8H%3Ft%3D1461213347000",
+            "content": "하구 갯벌을 좋아하며, 염생식물이 있는 군락지에서 집단번식하며, 갈대가 자라는 곳은 선호하지 않는다.\n짝짓기는 암컷이 수컷의 주위를 돌거나 부리로 수컷의 아랫부리를 쪼면, 수컷은 암컷에게 먹이를 토해주거나 부리로 건네주는 행동으로 짝을 이룬다.\n먹이를 구할 때는 제비갈매기와 유사하게 갯벌 위를 저공으로 천천히 날면서 먹이를 탐색하다가 먹이를 발견하면 급 하강하여 먹이를 낚아채고, 갯벌 위를 걸어 다니면서 먹이를 먹는다.\n자연 상태에서는 수리부엉이, 매, 황조롱이, 다른 갈매기류, 백로류, 너구리, 고양이, 족제비 등이 주요 포식자다.\n국제적으로 생존개체가 적은 희귀한 조류이며, 우리나라에서는 멸종위기 2급 조류로 지정하여 보호하고 있다.",
+            "size_tag": [3],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "붉은부리갈매기",
+            "sci_name": "Chroicocephalus ridibundus Black-headed Gull",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2F1EqQ0utdL0FfsE2SlNL9L9HwlsH85Ynuv3fhupOh%3Ft%3D1456986096000",
+            "content": "유라시아대륙 북부, 영국, 아이슬란드에서 번식하고, 겨울에는 유라시아대륙과 아프리카의 적도 부근에서 월동한다. 지리적으로 2아종으로 나눈다. 국내에서는 하구, 항구에서 무리를 이루어 월동하는 흔한 겨울철새다. 10월 초순에 도래해 4월 초순까지 관찰된다.",
+            "size_tag": [4],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "괭이갈매기",
+            "sci_name": "Larus crassirostris",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FWS7eAg5xnzoXXtZyWPJHWfqpUbzZHwFvncCyDqNC%3Ft%3D1461213347000",
+            "content": "길고 끝이 약간 굽은 부리는 먹이를 잡기 좋게 발달하였으며, 부리 위에는 작은 콧구멍이 있어 몸속에 염분이 쌓이지 않도록 밖으로 내보내는 역할을 한다.\n짝짓기를 할 때는 수컷이 먹이를 물어와 암컷에게 먹여주며 구애 행동을 하고, 먹이를 받거나 거절하는 행동을 통해 짝짓기 여부가 결정된다.\n매년 동일한 장소로 돌아와 번식하는 습성 때문에 해마다 같은 짝과 짝짓기를 하는 경향이 있다.\n번식기에는 대규모의 무리가 무인도에서 집단으로 번식하며, 번식기 동안에는 세력권을 형성하고 번식이 끝나면 세력권이 사라진다.\n겨울에는 남하하여 월동하는 습성이 있다.",
+            "size_tag": [4],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "나무발발이",
+            "sci_name": "Certhia familiaris Eurasian Treecreeper",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FuNKTYfsIDcBrvcPAlHDwWK7urdSVA7fZr9EdIzUl%3Ft%3D1456986093000",
+            "content": "유라시아대륙 전역의 온대와 아한대에서 번식한다. 국내에서는 흔하지 않은 겨울철새다. 10월 중순부터 도래하며 3월 하순까지 머문다. 설악산, 오대산 등 일부 지역에서 여름철에도 관찰되며, 2004년 오대산에서 번식이 확인되었다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "되지빠귀",
+            "sci_name": "Turdus hortulorum Grey-backed Thrush",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FnFgzh6le0NkfkBRc6o3GVxFBkmz3lKBpVmaCeLCi%3Ft%3D1456986097000",
+            "content": "러시아 극동 남부, 중국 동북부, 한국 등지에서 번식하고, 중국 남부와 베트남 북부에서 월동한다. 다소 흔하게 통과하는 나그네새이며, 다소 흔하게 번식하는 여름철새다. 4월 초순부터 도래해 번식하고, 10월 중순까지 관찰된다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "개똥지빠귀",
+            "sci_name": "Turdus eunomus Dusky Thrush",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2Fct3SI1mrPFlLdVHZkwQN1hEib7Eo85TiqS5rT1k7%3Ft%3D1456986093000",
+            "content": "중앙시베리아 중북부에서 동쪽으로 추코트반도, 캄차카, 사할린에서 번식하고, 중국 중남부, 한국, 일본, 대만, 미얀마 북부에서 월동한다. 전국 각지에 찾아오는 흔한 겨울철새이며 흔한 나그네새다. 10월 초순부터 도래해 통과하거나 월동하며, 5월 초순까지 관찰된다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "노랑지빠귀",
+            "sci_name": "Turdus naumanni Naumann's Thrush",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2Fct3SI1mrPFlLdVHZkwQN1hEib7Eo85TiqS5rT1k7%3Ft%3D1456986093000",
+            "content": "중앙시베리아(예니세이강에서 레나강) 중남부지역에서 번식하고, 중국 북부와 중부, 한국, 일본에서 월동한다. 국내에서는 흔한 겨울철새이며, 흔하게 통과하는 나그네새다. 10월 초순부터 도래해 통과하거나 월동하며, 5월 초순까지 관찰된다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "대륙검은지빠귀",
+            "sci_name": "Turdus merula Common Blackbird",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2F4NjD90l8bnhRXyhYrKC66uNWb7hsweo8gmeP8IwW%3Ft%3D1456986094000",
+            "content": "영국, 유라시아대륙 서부, 아프리카 북부, 서아시아, 중앙아시아, 인도 북부, 중국 중·남부에서 번식하고, 북쪽의 번식집단은 남쪽으로 이동해 월동한다. 국내에서는 1999년 7월 14일 강원 고성에서 번식이 확인된 이후 관찰기록이 증가하고 있다. 적은 수가 통과하는 나그네새다. 경기와 강원에서 번식한 기록이 있으며 매우 드물게 겨울철 기록도 있다. 보통 3월 중순부터 5월 중순까지 도서 지방을 통과한다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "물까치",
+            "sci_name": "Cyanopica cyana",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FiCGCGXnx2I1VJnoIj6HU3tFQk897eGZdnUhqHxm9%3Ft%3D1461213347000",
+            "content": "둥지를 높은 곳에 지으며, 무리 생활을 한다.\n특히 학습능력이 타 종에 비해 높은 것으로 알려져 있다.\n경계심이 강하며, 천적이 둥지를 습격하면 집단 방어를 한다.\n가족 중심의 무리를 지으며, 적게는 5-10개체에서 많게는 30개체 이상이 집단생활을 한다.\n다른 종에 비해 꼬리가 매우 길며, 긴 꼬리는 몸의 중심을 잡는데 도움을 준다.\n과일을 좋아해서 가을철 과일농사(배, 사과 등)를 짓는 농부에게 피해를 많이 입힌다.",
+            "size_tag": [3],
+            "habitats": [
+                1,
+                3,
+                4,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "어치",
+            "sci_name": "Garrulus glandarius",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FzKHJQqEWI7G94dIysBkCeDreOUJo3JIbHWzaeNEa%3Ft%3D1461213347000",
+            "content": "산에 사는 까치라고 해서 산까치라고 불리기도 한다.\n나뭇가지에서 가지로 옮겨 갈 때나 땅 위에서 걸을 때는 양쪽 다리를 함께 모아 통통 뛰며 걷는다.\n먹이가 없는 겨울을 대비해서 간혹 먹이(도토리 등)를 저장해 놓기도 한다.\n숲속에서 번식하는 작은 새들의 새끼를 사냥하는 모습이 관찰된다.\n어치는 자신들의 영역을 지키기 위해 다양한 소리로 괴성을 지르기도 한다.\n간혹 맹금류의 소리를 흉내 내어 자신의 서식지로 천적이 들어오는 것을 경계하기도 한다.",
+            "size_tag": [3],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "매",
+            "sci_name": "Falco peregrinus",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FBV91mtQWkAuUVevbShRc0j6dYDGGAPs1Xuqx5Cx7%3Ft%3D1461213347000",
+            "content": "우리나라에서는 드물게 관찰되는 텃새이고 해안이나 섬 등의 암벽에서 번식하고 겨울철에는 강 하구, 호수, 농경지, 습지 등지에서 생활한다.\n번식기 외에는 단독생활을 하며, 비행능력이 뛰어나 공중에서 먹이를 낚아채 사냥하기도 하고 땅 위의 먹이는 덮쳐 발톱으로 움켜쥐어 잡는다.\n환경부 지정 멸종위기 야생동물 Ⅰ급이며, 문화재청 지정 천연기념물 323-7호로 지정되어 있다.",
+            "size_tag": [4],
+            "habitats": [
+                2,
+                3
+            ]
+        },
+        {
+            "name": "새매",
+            "sci_name": "Accipiter nisus Eurasian Sparrowhawk",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2Fr36TwMM8BNEnJLayNdmS02XkjtcTSTNhFAZNTDeI%3Ft%3D1456986095000",
+            "content": "유럽, 아프리카, 중동, 시베리아, 캄차카, 중국 동부, 히말라야, 일본에서 번식한다. 지리적으로 7아종으로 나눈다. 흔한 나그네새이며 흔한 겨울철새다. 10월 초순에 도래해 월동하며, 5월 하순까지 관찰된다. 2015년 5월 경기도 포천에서 번식이 확인되었다.",
+            "size_tag": [4],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "말똥가리",
+            "sci_name": "Buteo japonicus Eastern Buzzard",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FLGdqlltff1JLtudQ8NgmhYve3P4hK6MOFmqShDLw%3Ft%3D1456986093000",
+            "content": "시베리아 중부에서 오호츠크해연안, 몽골, 아무르, 우수리, 사할린, 쿠릴열도 남부, 일본 등지에서 번식하고, 한국, 중국 남부, 일본, 동남아시아에서 월동한다. 흔한 겨울철새이며, 흔한 나그네새다. 9월 하순부터 도래해 통과하거나 월동하며, 봄철에는 4월 초순까지 머문다.",
+            "size_tag": [5],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "노랑눈썹솔새",
+            "sci_name": "Phylloscopus inornatus Yellow-browed Warbler",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FoW7E6FUuI0aOiUtsw12In0q8kSpITGi8pLNZ1eGf%3Ft%3D1456986091000",
+            "content": "러시아 북부의 페초라강 중류와 상류, 우랄산맥에서 동쪽으로 아나딜강과 오호츠크해 연안, 남쪽으로 알타이 동북부, 몽골 서북부, 바이칼, 우수리, 아무르에서 번식하고, 겨울에는 인도 동북부, 인도차이나반도, 말레이반도, 중국 남부, 대만에서 월동한다. 매우 흔한 나그네새다. 봄철에는 4월 중순부터 5월 중순까지, 가을철에는 9월 초순부터 11월 중순까지 통과한다. 매우 드물게 월동기록이 있다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "큰부리까마귀",
+            "sci_name": "Corvus macrorhynchos Large-billed Crow",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FMCW0xnQ337B0m3mHdhuo3ZDfh1kgvnQYAthCtOmk%3Ft%3D1456986090000",
+            "content": "아프가니스탄 동부에서 중국, 러시아 극동, 사할린, 쿠릴열도, 한국, 일본, 필리핀, 인도네시아에 서식한다. 9아종으로 분류한다. 전국적으로 흔히 서식하는 텃새다.",
+            "size_tag": [5],
+            "habitats": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "쇠백로",
+            "sci_name": "Egretta garzetta",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2F6uQZ2oxejNDq7cQFN552OFVB0gSQ4477jnjHK7mk%3Ft%3D1456986095000",
+            "content": "백로류 중 가장 작고, 몸은 순 백색이다.\n부리는 검고 뾰족하여 물고기를 잡기에 알맞다.\n하천의 가장자리, 강가, 해안, 하구, 논 등지에서 빠르게 움직이며 물고기, 연체동물 등을 잡는다.\n도심 하천의 수중보에서 물고기가 올라올 때를 기다렸다가 잡는 모습을 종종 볼 수 있다.\n최근에는 왜가리와 더불어 월동하는 개체군이 점차 증가하고 있다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                1,
+                8
+            ]
+        },
+        {
+            "name": "중백로",
+            "sci_name": "Egretta intermedia (Wagler, 1829)",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FWkIpm4uBMhYU4WWvVEOZMff6PrauJe3jyVfDzrfh%3Ft%3D1454032269000",
+            "content": "초지 또는 얕은 물에서 천천히 거닐며 물고기, 개구리, 미꾸라지 등을 잡아먹는다. 백로류와 함께 무리지어 집단번식하지만 개체수가 적다. 둥지는 쇠백로보다 약간 크게 만들며 알을 3~4개 낳고 24~27일간 포란한다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                5,
+                6,
+                1,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "중대백로",
+            "sci_name": "Ardea alba",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FaWr6gdPEpFldNyRh8LC3soyRFGslMEnDdeRkdKKf%3Ft%3D1461213347000",
+            "content": "부리는 크고 길며, 뾰족하여 물고기를 잡기에 알맞다.\n몸은 전체적으로 흰색을 띠며, 번식기에는 등에 장식깃이 있다.\n여름 번식기에는 부리가 검은색을 띠며, 겨울에는 부리가 노란색으로 변한다.\n왜가리와 비슷하거나 조금 작고 몸은 순백색이다.\n하천의 가장자리, 강가, 해안, 하구 등지에서 천천히 걸어가며 물고기를 잡는다.\n논에서 주로 물고기, 연체동물 등을 잡아먹는다.\n도심 하천의 수중보에서 물고기가 올라올 때 기다렸다가 잡는 것을 볼 수 있다.\n최근에는 왜가리와 더불어 월동하는 개체군이 점차 증가하고 있다.",
+            "size_tag": [6],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                1
+            ]
+        },
+        {
+            "name": "대백로",
+            "sci_name": "Ardea alba alba Western Great Egret",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2Fpc901wAhrjhZXyw4FyT57hImyqvQHmdZoHAUOivL%3Ft%3D1456986093000",
+            "content": "유럽에서 동쪽으로 아시아 북부, 중국 동북부 지역의 유라시아대륙에서 번식한다. 국내에서는 흔한 겨울철새다. 적지 않은 수가 천수만 간월호, 해남 영암호, 강원 속초 청초호 등 드넓은 간척지, 하천, 호수 등지에서 월동한다.",
+            "size_tag": [6],
+            "habitats": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                1
+            ]
+        },
+        {
+            "name": "해오라기",
+            "sci_name": "Nycticorax nycticorax",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FAFOatSW2BUDlnXMrMuwKWCeAkQi3LoU9qqC4CWsT%3Ft%3D1461213347000",
+            "content": "넓은 서식지를 선호하며, 담수나 기수지역을 모두 이용한다.\n다른 백로류에 비해 다리가 짧으며, 앉아있을 때는 목이 없는 것처럼 짧아 보이지만 먹이를 사냥할 때는 목을 길게 늘여 뺀다.\n주로 야행성으로 해질녘부터 활발히 활동을 한다고 하여 ‘밤물까마귀’라는 별명이 있다.\n먹이를 잡을 때는 몸을 움직이지 않고 가만히 있다가 먹이를 발견하면 목을 길게 늘여 빼 먹이를 사냥한다.\n목이 굵어 큰 물고기도 쉽게 삼킬 수 있다.\n주로 다른 백로류와 섞여서 번식한다.\n휴식할 때는 한쪽 다리만 세우고 쉰다.\n전형적인 이동성 조류로 밤에 이동하고, 이동할 때는 단독으로 또는 작은 무리를 지어서 이동한다.",
+            "size_tag": [6],
+            "habitats": [
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "검은댕기해오라기",
+            "sci_name": "Butorides striata (Linnaeus, 1758)",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FAQMs7DLqeM2F8sd7eTe2rFrFkxNlkQ1QqA2yLT9Z%3Ft%3D1454032271000",
+            "content": "암수 같은 색이며, 머리는 푸른 기운이 있는 검은색, 뒷머리에 길고 검은색 댕기가 있다. 등과 날개는 푸른 기운이 있는 회흑색, 날개덮깃 가장자리는 폭 좁은 흰색이다. 몸아랫면은 엷은 청회색이며 가슴 중앙에 흰색 세로 줄무늬가 있다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "흰날개해오라기",
+            "sci_name": "Ardeola bacchus Chinese Pond Heron",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2Fpxwobbjx7xWPDdp6wJo39ahELryo3ERga6KdAtD6%3Ft%3D1456986091000",
+            "content": "중국에서 베트남, 미얀마 동남부에서 번식하고, 대만, 말레이반도, 보르네오에서 월동한다. 봄·가을 이동시기에 규칙적으로 통과하는 드문 나그네새이며 매우 드문 여름철새다. 4월 중순에 도래해 10월 하순까지 관찰된다.",
+            "size_tag": [5],
+            "habitats": [
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "왜가리",
+            "sci_name": "Ardea cinerea",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FBoCrFVnWLsgINauvcqX3iSdIIKDt0gPc3q76ctmT%3Ft%3D1461213347000",
+            "content": "여름철새이지만 최근에는 월동하는 개체군이 점차 증가하여 일부는 텃새이기도 하다.\n황소개구리 성체를 잡아먹을 정도로 우리나라에 번식하는 백로류 중에서 가장 크다.\n부리는 크고 길며, 뾰족하여 물고기를 잡기에 알맞다.\n여름 번식기에는 부리가 주황색을 띠며, 다리도 붉어진다.\n? 하천의 가장자리, 강가, 해안, 하구 등지에서 가만히 서서 물고기를 기다렸다가 잡는다.\n? 도심 하천의 수중보에서 물고기가 올라올 때를 기다렸다가 잡는 것을 볼 수 있다.",
+            "size_tag": [6],
+            "habitats": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "name": "찌르레기",
+            "sci_name": "Sturnus cineraceus",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FIxISs3AlbFqdGJ3l0jE52ehZcOq5nFttTm3z10HM%3Ft%3D1461213347000",
+            "content": "지상의 곤충과 나무열매를 즐겨 먹고 번식기 이외에는 무리지어 다닌다.\n겨울철 잠자리에는 수백 마리까지도 모여든다.\n논과 밭의 가로질러 놓인 전선에 여러 마리가 한 줄로 앉아 쉬는 모습이 많이 보인다.\n과일 등을 좋아해서 간혹 농작물에 피해를 주기도 하지만 대부분은 해충 등을 잡아먹어 농작물을 잘 자랄 수 있도록 도와준다.\n과거에는 여름철새로 알려져 있었으나, 최근에는 남부지역을 중심으로 텃새화되어 겨울에도 많은 수가 관찰된다.",
+            "size_tag": [2],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "노랑할미새",
+            "sci_name": "Motacilla cinerea Grey Wagtail",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2F6MnPbNO7NoKJAOVR0kJqOgdySP92uODTiBsH4iOL%3Ft%3D1456986093000",
+            "content": "극지방을 제외한 유라시아대륙 전역에서 번식하고, 겨울에는 인도, 동남아시아에서 뉴기니로 이동한다. 3아종으로 나눈다. 전국에 걸쳐 흔하게 번식하는 여름철새이며, 흔히 통과하는 나그네새다. 적은 수가 한반도 중부, 남부, 제주도에서 월동한다. 3월 중순부터 도래해, 전국에서 번식하고, 7월 중순부터 남하해 10월 하순까지 통과한다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "알락할미새",
+            "sci_name": "Motacilla alba White Wagtail",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FgcACfqqSE0RoMaemFg9r3rfGL0KqImomh7E64m4Z%3Ft%3D1456986092000",
+            "content": "유라시아대륙 전역과 아프리카대륙의 폭 넓은 지역에 분포한다. 앉아 있을 때 꼬리를 위아래로 흔드는 습성이 있다. 곤충을 주식으로 한다. 11아종으로 나누며, 국내에서는 6아종이 기록되어 있다. 미성숙한 개체의 성 구별 및 아종 구별은 매우 어렵다.",
+            "size_tag": [2],
+            "habitats": [
+                1,
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "귀제비",
+            "sci_name": "Cecropis daurica Red-rumped Swallow",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FWkCfI38ECSU3urXWcjKKoGbpRAfVdCKFH2semENj%3Ft%3D1456986091000",
+            "content": "아프리카 중부, 유럽 남부에서 중앙아시아, 인도, 중국, 한국, 일본에서 번식하고, 인도, 동남아시아, 중국 남부에서 월동한다. 지리적으로 8 또는 10아종으로 나눈다. 다소 흔히 번식하는 여름철새이며, 흔히 통과하는 나그네새다. 제비보다 서식밀도가 낮으며 개체수가 감소하고 있다. 4월 초순에 도래해 10월 중순까지 관찰된다.",
+            "size_tag": [1],
+            "habitats": [
+                1
+            ]
+        },
+        {
+            "name": "흰턱제비",
+            "sci_name": "Delichon urbicum Common House Martin",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FlZnla319uETaF9g6V4BAYxrkA2qA1psfnRTLFnoq%3Ft%3D1456986090000",
+            "content": "유라시아대륙, 아프리카 북부에서 번식하고, 아프리카, 서남아시아, 인도차이나반도 북부와 중동부에서 월동한다. 2003년 4월 19일에 전북 군산 어청도에서 처음으로 확인된 이후 거의 매년 확인된다. 주로 봄·가을 한반도 서해에 위치한 작은 도서를 통과하는 매우 드문 나그네새다. 봄철에는 4월 중순부터 5월 하순까지, 가을철에는 9월 하순에 통과한다.",
+            "size_tag": [1],
+            "habitats": [
+                1
+            ]
+        },
+        {
+            "name": "물닭",
+            "sci_name": "Fulica atra",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2F2jF0KdrGwODHElg2baeSr8q4uROoFgBalX3tTIaM%3Ft%3D1461213347000",
+            "content": "우리나라 강이나 호수, 저수지에서 흔히 관찰된다.\n전체적으로 몸이 통통하며 깃털 색은 검은색이다.\n물갈퀴와 유사한 판족과 날카로운 발톱을 가지고 있어 수영과 잠수에 능하며, 위험할 경우 수면을 박차며 물위를 뛰면서 날아간다.\n겨울에는 많은 수가 오리류 등과 무리를 지어 월동한다.",
+            "size_tag": [4],
+            "habitats": [
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "민물가마우지",
+            "sci_name": "Phalacrocorax carbo",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FdMWPyZOvQdFXhnFZHuvMsCQRxWDPQpoN71VspdhR%3Ft%3D1461213347000",
+            "content": "2m 이상의 수심까지 잠수하여 물고기를 잡아먹으며, 가마우지 등과 함께 번식한다.\n번식기에는 머리에 가느다란 흰색의 깃이 나오며 옆구리에 흰색의 깃털이 있다.\n날 때 날개의 위치가 몸 중앙에 있어 멀리서는 기러기처럼 보이기도 한다.\n먹이를 구하는 곳과 휴식하는 곳의 이동시 기러기처럼 일정한 대형을 유지하며, 무리지어 날아다닌다.\n연해주, 사할린에서 일본의 규슈 북부까지 국지적으로 번식한다.",
+            "size_tag": [6],
+            "habitats": [
+                4,
+                6,
+                7
+            ]
+        },
+        {
+            "name": "가마우지",
+            "sci_name": "Phalacrocorax capillatus Temminck's Cormorant",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FA4GCJ8WSZenBVhLM5DLgiBOVgTaVd85JFjjcE8lz%3Ft%3D1456986096000",
+            "content": "러시아 극동, 사할린에서 일본 규슈 북부, 한국, 중국 황해 지역에 국지적으로 번식한다. 국내에서는 거제도에 딸린 작은 무인도, 거문도, 상태도, 백령도, 소청도, 제주도 등 서·남해안의 작은 무인도 바위 절벽에서 번식하는 드문 텃새다. 북한의 함북 웅기 앞바다의 알섬, 평북 선천 앞바다의 납도 등지에서 번식한다.",
+            "size_tag": [6],
+            "habitats": [
+                2
+            ]
+        },
+        {
+            "name": "박새",
+            "sci_name": "Parus major",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FOb1MwzcIJORVVOSMqBM0Wo4Magdeld4FbXhkOsuK%3Ft%3D1461213347000",
+            "content": "산림에 서식하는 대표적인 식충(벌레를 잡아먹음)성 조류이며, 도심의 공원에서도 쉽게 관찰된다.\n먹이활동을 통해 해충구제에 기여하고 있어 생태계 건강성 유지에 중요한 역할을 한다.\n번식은 기후변화 특히, 온도와 밀접한 연관이 있으며, 기온변화에 따라 번식시기가 조절된다(기온에 따라 곤충발생, 새끼 생육조건이 달라진다.).\n가을부터 겨울에는 여러 종류의 박새들이 무리를 지어 생활하며, 무리의 주도권은 주로 박새가 지닌다.\n먹이가 부족한 겨울에는 나무에 땅콩이나 돼지비계 등을 매달아 두면 날아와 먹는다.\n노랑턱멧새와 같이 한 지역에 머무르는 특성이 있어 지역 간의 소리변이 즉, 방언을 연구하는데 가장 대표적인 표본이 되는 새이다.",
+            "size_tag": [1],
+            "habitats": [
+                1,
+                3
+            ]
+        },
+        {
+            "name": "진박새",
+            "sci_name": "Periparus ater Coal Tit",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FVuSmVwBPd0QPq1A0HoKupBEmgpXq2QNarGGFdphX%3Ft%3D1456986096000",
+            "content": "유럽에서 동아시아까지 유라시아대륙에 폭 넓게 분포한다. 국내에서는 흔하게 번식하는 텃새이며(박새, 쇠박새보다 서식밀도가 낮다), 일부 무리가 가을 이동시기에 서해의 외딴 섬을 통과해 남하한다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "쇠박새",
+            "sci_name": "Parus palustris",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm125%2FLov1MTveK0OATqY0aFnJBf78bu0chPbGOoj7B94v%3Ft%3D1461213346000",
+            "content": "나무 꼭대기에도 앉지만 삼림 아래의 관목에도 자주 앉는다.\n동작이 재빠르고, 땅위에 자주 내려와 먹이 활동을 한다.\n다른 박새과 조류와 섞여 움직이며, 먹이활동도 같이 한다.\n번식기에는 깊은 숲속이나 고산지역에서 지내다가 먹이가 부족한 겨울철에는 도시 부근까지 내려와 쉽게 눈에 띤다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "쇠솔딱새",
+            "sci_name": "Muscicapa latirostris Asian Brown Flycatcher",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FgRWV87KFZbX9UCEyKLVO4ubr47TbXZDSkmPHAri9%3Ft%3D1456986090000",
+            "content": "인도, 히말라야, 예니세이강에서 동쪽으로 러시아 극동, 사할린, 쿠릴열도 남부, 중국 북동부, 한국, 일본에서 번식하고, 중국 남부, 동남아시아에서 월동한다. 3아종으로 나눈다. 평지나 산림을 흔하게 통과하는 나그네새이며, 일부 지역에서 극히 드물게 번식하는 여름철새다. 봄철에는 4월 하순부터 5월 하순까지, 가을철에는 8월 하순부터 10월 중순까지 통과한다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "큰유리새",
+            "sci_name": "Cyanoptila cyanomelana Blue-and-White Flycatcher",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FdwAPJsBZHPj07RUYEKp27c3gl0CHFxOzqf3AKZtu%3Ft%3D1456986092000",
+            "content": "아무르, 우수리, 중국 북동부, 한국, 일본에서 번식하고, 인도차이나, 수마트라, 자바, 보르네오, 필리핀에서 월동한다. 국내에서는 흔한 여름철새다. 4월 중순부터 5월 중순까지 통과하며, 가을철에는 8월 중순부터 10월 중순까지 통과한다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "흰눈썹황금새",
+            "sci_name": "Ficedula zanthopygia Yellow-rumped Flycatcher",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2F23eEqCA2bIzBiRuSJCpg0ptrpiJAlPdfG3CZkPsY%3Ft%3D1456986090000",
+            "content": "몽골 동부, 아무르, 우수리, 중국 북부와 중부, 한국에서 번식하고, 인도차이나 북부, 말레이반도, 수마트라, 자바에서 월동한다. 국내에서는 주로 중부 이북에서 번식하는 드문 여름철새다. 4월 하순부터 5월 중순까지 통과하며, 8월 중순부터 9월 중순 사이에 통과한다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        },
+        {
+            "name": "황금새",
+            "sci_name": "Ficedula narcissina Narcissus Flycatcher",
+            "image": "https://t1.daumcdn.net/thumb/R659x0/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fencyclop%2Fm120%2FBh2BdfNoJzhZlYB94vy511SkjoYo2O5QrVvZvZr0%3Ft%3D1456986091000",
+            "content": "쿠릴열도 남부, 사할린, 일본 북해도, 혼슈, 시코쿠, 큐슈에서 번식하고, 하이난, 인도차이나반도 남부, 필리핀, 보로네오에서 월동한다. 봄철에 드물게 통과하며 가을철에는 통과하지 않는 나그네새다. 4월 중순에 도래하며, 5월 초까지 관찰된다. 이례적으로 2014년 6월 경남 남해 금산에서 번식했다.",
+            "size_tag": [1],
+            "habitats": [
+                3
+            ]
+        }
+    ]
+}

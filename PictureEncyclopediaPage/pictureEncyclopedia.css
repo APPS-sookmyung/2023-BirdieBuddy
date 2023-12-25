@@ -56,13 +56,14 @@ body{
 }
 #questionBox{
     width:85%;
-    height:36%;
+    height:40%;
     background-color: #FFFBE9;
     border-radius: 20px;
-    margin-top: 1%;
     margin-left:auto;
     margin-right:auto;
-    padding-top:35px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
     overflow-y:scroll;
 }
 #questionBox::-webkit-scrollbar {
@@ -86,28 +87,51 @@ body{
     height:25px;
     background-color: #F5EFD4;
     text-align: center;
-    margin-left:5%;
+    margin-top:4vh;
+}
+#questionName span{
+    margin-right: 5px;
 }
 #questions{
-    width:90%;
-    margin-top:3%;
-    margin-left:5%;
+    width:65vw;
+    margin: 5vh auto;
     display:flex;
+    align-items: center;
+    justify-content: left;
     flex-direction:row;
     flex-wrap:wrap;
 }
 .question{
-    margin-right:24px;
-    margin-bottom:3%;
+    width: 8vw;
+    height: 10vw;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left:2.5vw;
+    margin-right:2.5vw;
+    margin-bottom:5vh;
 }
-.answerImg{
-    width:90px;
-    height:90px;
+.questionLabel{
+    width:6vw;
+    height:6vw;
     border-radius: 50%;
     border:#EEF5CD solid 20px;
 }
+.questionLabel div{
+    width: 100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.answerImg{
+    height: 50px;
+}
 .answerExplain{
     text-align: center;
+    margin-top:1vh;
 }
 [type=checkbox] { 
     position: absolute;
@@ -118,20 +142,22 @@ body{
 [type=checkbox] + img {
     cursor: pointer;
 }
-[type=checkbox]:checked + img {
-    outline: 2px solid #f00;
+.question:hover{
+    cursor: pointer;
 }
 #submitAnswer{
     width:60px;
     height:30px;
-    margin-top:80px;
-    margin-left:20px;
+    margin: 45px 20px;
     border-radius:10px;
     background-color:#EEF5CD;
 }
+#submitAnswer:hover{
+    cursor:pointer;
+}
 #main{
     width:85%;
-    height:36%;
+    height:42%;
     background-color: #FFFBE9;
     border-radius: 20px;
     margin-top: 1%;
@@ -179,7 +205,7 @@ body{
     margin-left:5px;
 }
 .birdExplanation{
-    height:80%;
+    height:4em;
     width:98%;
     margin-right:100px;
     grid-area:explain;
