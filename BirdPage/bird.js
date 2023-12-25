@@ -34,3 +34,25 @@ function concernExplain(){
     })
 }
 concernExplain();
+
+let birdInfo = undefined;
+fetch("./bird.json")
+.then((response) => response.json())
+.then(result => {applyBirdInfo(result["data"]); birdInfo = result["data"];})
+console.log(birdInfo);
+
+function applyBirdInfo(data){
+    $("#birdProfilePic").src = data["image"];
+    $("#birdName").querySelector("h3").innerHTML = data["name"];
+    $("#englishName").innerHTML = data["eng"];
+    $("#scientificName").innerHTML = data["scien_name"];
+
+    $("#birdTable").querySelectorAll("tr")[0].querySelectorAll('td')[1].innerText = data["name"];
+    $("#birdTable").querySelectorAll("tr")[1].querySelectorAll('td')[1].innerText = data["classed"];
+    $("#birdTable").querySelectorAll("tr")[2].querySelectorAll('td')[1].innerText = data["scien_name"];
+    $("#birdTable").querySelectorAll("tr")[3].querySelectorAll('td')[1].innerText = data["eng"];
+    $("#birdTable").querySelectorAll("tr")[4].querySelectorAll('td')[1].innerText = data["size"];
+    $("#birdTable").querySelectorAll("tr")[5].querySelectorAll('td')[1].innerText = data["habitat"];
+    $("#birdTable").querySelectorAll("tr")[7].querySelectorAll('td')[1].innerText = data["content"];
+}
+//$("#birdProfilePic").src = 
