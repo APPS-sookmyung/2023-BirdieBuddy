@@ -48,18 +48,6 @@ function changePhoto(target){
         //내가 클릭한 file이 몇번째 file 버튼일까 구하는 코드
         const index = Array.prototype.indexOf.call(allFiles,target);
 
-        /*
-        const reader = new FileReader();
-        reader.addEventListener("load",()=>{
-            //처음에 allInitPhotos[index]말고 그냥 $(".photos")했더니만 첫번째 file 대표사진만 바뀌더라. 이런 실수.
-            allInitPhotos[index].src = reader.result;
-            allInitPhotos[index].style.width = "8vw";
-            allInitPhotos[index].style.height = "auto";
-        })
-        if (file){
-            reader.readAsDataURL(file);
-        }
-        */
         if (files.length){
             allNumbers[index].innerText = 1;
             allTotals[index].innerText = target.files.length;
@@ -79,6 +67,7 @@ function changePhoto(target){
         }
         console.log(data[1].Birds[index].Photos)
         target.value = '';
+        console.log(data);
     })
 }
 

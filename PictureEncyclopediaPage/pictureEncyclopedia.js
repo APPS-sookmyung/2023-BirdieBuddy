@@ -3,6 +3,8 @@ import {buttonline} from '../src/buttonline.js';
 buttonline();
 let questionNum = 0;
 let jsonReference = "habitats";
+let encyclopedia = [];
+let checked = [];
 
 const question = {
     "서식지": 
@@ -73,14 +75,37 @@ function makeQuestion(){
         })
     })
     questionNum ++;
+    if (questionNum==2){
+        $("#submitAnswer").remove();
+    }
 }
+
 makeQuestion();
 $("#submitAnswer").addEventListener("click", ()=>{
     document.querySelectorAll(".question").forEach(q=>q.remove());
+    let currentPage = [];
+    document.querySelectorAll(".birdInfo").forEach(i=>{
+        encyclopedia.forEach(e => {
+            if (e["name"] == i.querySelector(".birdName").innerText){
+                currentPage.push({
+                    "name": e["name"],
+                    "sci_name": e["sci_name"],
+                    "image": e["image"],
+                    "content": e["content"],
+                    "size_tag": e["size_tag"],
+                    "habitats": e["habitats"]
+                })
+            }
+        })
+    })
+    encyclopedia = currentPage
+    document.querySelectorAll(".birdInfo").forEach(q=>q.remove());
+    addEncyclopediaLog(encyclopedia);
     makeQuestion();
+    checked = [];
 })
 
-let encyclopedia = [];
+
 fetch('./pictureEncyclopedia.json')
     .then((response) => response.json())
     .then((json) => {return json["data"].sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))})
@@ -92,7 +117,7 @@ function addEncyclopediaLog(dataLog){
         <div class="birdInfo">
             <image class="birdPic" src="${data["image"]}"></image>
             <div class="birdText">
-                <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></a>
+                <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></a>
                 <p class="birdExplanation">${data["content"]}</p>
             </div>
         </div>
@@ -101,7 +126,7 @@ function addEncyclopediaLog(dataLog){
     });
 }
 
-let checked = [];
+
 let checker = (arr, target) => target.every(v => arr.includes(v));
 $("#questions").addEventListener("click", (e)=>{
     if (e.target.className=="questionCheckbox"){
@@ -109,6 +134,7 @@ $("#questions").addEventListener("click", (e)=>{
             document.querySelectorAll(".questionCheckbox").forEach(q=>{
                 if (q.checked && !checked.includes(parseInt(e.target.getAttribute("qdata")))){
                     checked.push(parseInt(e.target.getAttribute("qdata")));
+                    console.log(checked);
                 }
             })
             document.querySelectorAll(".birdInfo").forEach(q=>q.remove());
@@ -118,7 +144,7 @@ $("#questions").addEventListener("click", (e)=>{
                     <div class="birdInfo">
                         <image class="birdPic" src="${data["image"]}"></image>
                         <div class="birdText">
-                            <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></a>
+                            <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></a>
                             <p class="birdExplanation">${data["content"]}</p>
                         </div>
                     </div>
@@ -129,7 +155,6 @@ $("#questions").addEventListener("click", (e)=>{
         } else{
             removeItemOnce(checked, parseInt(e.target.getAttribute("qdata")));
             document.querySelectorAll(".birdInfo").forEach(q=>q.remove());
-            console.log(checked);
             encyclopedia.forEach(data=>{
                 if (checked.every(r => data[jsonReference].includes(r))){
                     let addData = `
@@ -144,7 +169,6 @@ $("#questions").addEventListener("click", (e)=>{
                     $("#main").insertAdjacentHTML("beforeend", addData);
                 }
             })
-            console.log(checked);
         }
     }
 })

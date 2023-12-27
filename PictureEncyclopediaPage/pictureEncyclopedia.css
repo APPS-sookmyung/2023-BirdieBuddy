@@ -193,16 +193,19 @@ body{
     margin-right:20px;
 }
 .birdName{
+    display:inline-block;
     grid-area:name;
     height:20px;
-    width:50vw;
+    width:fit-content;
     margin-bottom:15px;
     font-weight:bold;
     font-size:17px;
 }
 .birdSciName{
+    display:inline-block;
     font-family: 'Jim Nightshade', cursive;
     margin-left:5px;
+    font-weight:bold;
 }
 .birdExplanation{
     height:4em;
