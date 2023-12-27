@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../StartPage/birdOfKoreaLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./ask.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mainFrame">
+            <image src="../mascot.png" id="searchMascot"></image>
+            <div id="main">
+                <div id="hidePage">
+                    <img src="./img/crescentMoon.png" class="sunMoon">
+                </div>
+                <img src="./img/sun.png" class="sunMoon">
+                <div id="imgBundle">
+                    <div>
+                        <img src="./img/angry1.png" class="angryImg">
+                    </div>
+                    <div>
+                        <img src="./img/sorry1.png" class="sorryImg">
+                        <img src="./img/teardrop.png" class="tearImg">
+                    </div>
+                </div>
+                <p class="sorry" id="sorry1">SORRY</p>
+                <p class="sorry" id="sorry2">SORRY</p>
+                <p class="sorry" id="sorry3">SORRY</p>
+                <p id="countDown"><span class="day"></span>DAYS<span class="hour"></span>H<span class="minute"></span>M<span class="second"></span>S</p>
+            </div>
+            <div id="line"></div>
+            <div id="buttonLine">
+                <button class="pageButton" onclick="location.href = '../EncyclopediaPage/encyclopedia.html'">도감</button>
+                <button class="pageButton" onclick="location.href = '../AskPage/ask.html'" id="currentButton">동정</button>
+                <button class="pageButton" onclick="location.href = '../RecordPage/record.html'">기록</button>
+                <button class="pageButton" onclick="location.href = '../NewsPage/news.html'" >새뉴스</button>
+                <button class="pageButton" onclick="location.href = '../BadgePage/badge.html'">배지</button>
+                <button class="pageButton" onclick="location.href = '../MyPage/mypage.html'">마이페이지</button>
+                <div id="settings">
+                    <a href="../StartPage/start.html"><img src="../logout.png" class="logout"></a>
+                    <img src="../notification.png" class="notification">
+                </div>
+            </div>
+        </div>
+        <script src="./ask.js" type="module"></script>
+    </body>
+</html>
