@@ -85,9 +85,11 @@ $("#submitAnswer").addEventListener("click", ()=>{
     document.querySelectorAll(".question").forEach(q=>q.remove());
     let currentPage = [];
     document.querySelectorAll(".birdInfo").forEach(i=>{
+        console.log(i.querySelector(".birdName").innerText);
         encyclopedia.forEach(e => {
             if (e["name"] == i.querySelector(".birdName").innerText){
                 currentPage.push({
+                    "id": e["id"],
                     "name": e["name"],
                     "sci_name": e["sci_name"],
                     "image": e["image"],
@@ -100,13 +102,15 @@ $("#submitAnswer").addEventListener("click", ()=>{
     })
     encyclopedia = currentPage
     document.querySelectorAll(".birdInfo").forEach(q=>q.remove());
+    console.log(encyclopedia);
+    console.log(currentPage);
     addEncyclopediaLog(encyclopedia);
     makeQuestion();
     checked = [];
 })
 
 
-fetch('./pictureEncyclopedia.json')
+fetch('http://3.36.205.170:8080/PictureEncyclopediaPage')
     .then((response) => response.json())
     .then((json) => {return json["data"].sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))})
     .then((sorted)=>{sorted.forEach(sort=>encyclopedia.push(sort)); addEncyclopediaLog(sorted)})
@@ -117,7 +121,7 @@ function addEncyclopediaLog(dataLog){
         <div class="birdInfo">
             <image class="birdPic" src="${data["image"]}"></image>
             <div class="birdText">
-                <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></a>
+                <div class="link" birdId="${data["id"]}"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></div>
                 <p class="birdExplanation">${data["content"]}</p>
             </div>
         </div>
@@ -139,12 +143,13 @@ $("#questions").addEventListener("click", (e)=>{
             })
             document.querySelectorAll(".birdInfo").forEach(q=>q.remove());
             encyclopedia.forEach(data=>{
+                console.log(data[jsonReference]);
                 if (checked.every(r => data[jsonReference].includes(r))){
                     let addData = `
                     <div class="birdInfo">
                         <image class="birdPic" src="${data["image"]}"></image>
                         <div class="birdText">
-                            <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></a>
+                            <div class="link" birdId="${data["id"]}"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></div>
                             <p class="birdExplanation">${data["content"]}</p>
                         </div>
                     </div>
@@ -161,7 +166,7 @@ $("#questions").addEventListener("click", (e)=>{
                     <div class="birdInfo">
                         <image class="birdPic" src="${data["image"]}"></image>
                         <div class="birdText">
-                            <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></a>
+                            <div class="link" birdId="${data["id"]}"><p class="birdName">${data["name"]}</p><p class="birdSciName">(${data["sci_name"]})</p></div>
                             <p class="birdExplanation">${data["content"]}</p>
                         </div>
                     </div>
@@ -171,4 +176,24 @@ $("#questions").addEventListener("click", (e)=>{
             })
         }
     }
+})
+
+//새에 맞는 페이지로 이동할 수 있게 해주는 장치 -> localStorage라는 global 변수 써서 처리중
+async function callPage(element){
+    return element.getAttribute("birdId");
+}
+
+document.querySelector("#main").addEventListener("click",(e)=>{
+    if (e.target.className=="birdName"||e.target.className=="birdSciName"){
+        console.log(e.target.closest(".link").getAttribute("birdId"));
+        callPage(e.target.parentElement)
+            .then(id => {
+                localStorage.setItem("pageId", id);
+            })
+            .then(r => {
+                window.location.href = "../BirdPage/bird.html";
+            })
+        
+    }
+    
 })

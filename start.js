@@ -1,4 +1,4 @@
-import { $ } from "../src/util.js";
+import { $ } from "./src/util.js";
 
 const pic = $("#startingpageImage");
 const nextpic = $("#nextImage");

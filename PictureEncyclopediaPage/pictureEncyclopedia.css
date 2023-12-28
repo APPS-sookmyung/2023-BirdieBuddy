@@ -214,6 +214,10 @@ body{
     grid-area:explain;
     overflow-y:hidden;
 }
+.link:hover{
+    cursor:pointer;
+    width: fit-content;
+}
 #line{
     position:absolute;
     z-index:5;

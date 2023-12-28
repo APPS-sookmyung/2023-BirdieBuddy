@@ -10,7 +10,6 @@ function concernExplain(){
     let isExplain = false;
     const concernCoords = $("#concern").getBoundingClientRect();
     const birdnameCoords = $("#birdName").getBoundingClientRect();
-    console.log(concernCoords.left,concernCoords.right);
     $("#concern").addEventListener("mouseover",()=>{
         let scale = window.innerWidth/initWindowSize;
         if (!isExplain){
@@ -36,10 +35,20 @@ function concernExplain(){
 concernExplain();
 
 let birdInfo = undefined;
-fetch("./bird.json")
-.then((response) => response.json())
+
+const requestOptions = {
+    method: 'GET',
+    headers:{
+        'Content-Type' : 'application/json'
+    },
+};
+
+let pageId = localStorage.getItem("pageId");
+console.log(pageId);
+
+fetch("http://3.36.205.170:8080/BirdPage/"+pageId, requestOptions)
+.then((response) => {return response.json();})
 .then(result => {applyBirdInfo(result["data"]); birdInfo = result["data"];})
-console.log(birdInfo);
 
 function applyBirdInfo(data){
     $("#birdProfilePic").src = data["image"];

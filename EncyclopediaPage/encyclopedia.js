@@ -19,7 +19,7 @@ function addEncyclopediaLog(dataLog){
         <div class="birdInfo">
             <image class="birdPic" src="${data["image"]}"></image>
             <div class="birdText">
-                <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></a>
+                <div class="link" birdId="${data["id"]}"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></div>
                 <p class="birdExplanation">${data["content"]}</p>
             </div>
         </div>
@@ -39,7 +39,7 @@ $("#searchBoxInput").addEventListener("keyup", ()=>{
             <div class="birdInfo">
                 <image class="birdPic" src="${data["image"]}"></image>
                 <div class="birdText">
-                    <a href="../BirdPage/bird.html"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></a>
+                    <div class="link" birdId="${data["id"]}"><p class="birdName">${data["name"]}<span class="birdSciName">(${data["sci_name"]})</span></p></div>
                     <p class="birdExplanation">${data["content"]}</p>
                 </div>
             </div>
@@ -47,4 +47,22 @@ $("#searchBoxInput").addEventListener("keyup", ()=>{
             $("#main").insertAdjacentHTML("beforeend", addData);
         }
     })
+})
+async function callPage(element){
+    return element.getAttribute("birdId");
+}
+
+document.querySelector("#main").addEventListener("click",(e)=>{
+    if (e.target.className=="birdName"||e.target.className=="birdSciName"){
+        console.log(e.target.closest(".link").getAttribute("birdId"));
+        callPage(e.target.closest(".link"))
+            .then(id => {
+                localStorage.setItem("pageId", id);
+            })
+            .then(r => {
+                window.location.href = "../BirdPage/bird.html";
+            })
+        
+    }
+    
 })

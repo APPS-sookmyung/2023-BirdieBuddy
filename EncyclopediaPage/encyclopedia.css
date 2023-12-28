@@ -81,7 +81,7 @@ body{
     display: none;  /* Safari and Chrome */
 }
 .birdInfo{
-    width:90%;
+    width:80vw;
     height:120px;
     margin-right:5%;
     margin-left:5%;
@@ -119,6 +119,10 @@ body{
     width:98%;
     margin-right:100px;
     overflow-y:hidden;
+}
+.link:hover{
+    cursor:pointer;
+    width: fit-content;
 }
 #line{
     position:absolute;
