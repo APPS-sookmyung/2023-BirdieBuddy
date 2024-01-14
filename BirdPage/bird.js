@@ -46,7 +46,7 @@ const requestOptions = {
 let pageId = localStorage.getItem("pageId");
 console.log(pageId);
 
-fetch("http://3.36.205.170:8080/BirdPage/"+pageId, requestOptions)
+fetch("https://birdieserver.today:8080/BirdPage/"+pageId, requestOptions)
 .then((response) => {return response.json();})
 .then(result => {applyBirdInfo(result["data"]); birdInfo = result["data"];})
 

@@ -4,7 +4,7 @@ import { buttonline } from '../src/buttonline.js';
 buttonline();
 
 let encyclopedia = [];
-fetch('http://3.36.205.170:8080/FamilyEncyclopediaPage')
+fetch('https://birdieserver.today:8080/FamilyEncyclopediaPage')
     .then((response) => {return response.json();})
     .then((json) => { return json["data"].sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0))})
     .then((sorted)=>{ sorted.forEach(sort=>encyclopedia.push(sort));addFamilyLog(sorted)})
