@@ -140,8 +140,7 @@ body{
 }
 #id:focus, #pw:focus{
     background: transparent;
-    outline-width: 0;
-    border:none;
+    outline-width: 0; 
 }
 input::placeholder{
     color: white;
