@@ -247,7 +247,14 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover{
     height:90vh;
     width:auto;
 }
-
+#fsDelBtn{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
 .explanation{
     display:inline-flex;
     justify-content: center;

@@ -10,7 +10,7 @@ for (let i=0; i<pageButton.length;i++){
 }
 
 const date = new Date();
-$("#date").value = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+$("#date").value = date.getFullYear() + "-" + ('0'+(date.getMonth()+1)).slice(-2) + "-" + date.getDate();
 
 //탐조 위치: 쓰는 글에 따라 배경 흰색 부분이 같이 커지는 코드
 function resizeInput() {
@@ -70,7 +70,15 @@ function changePhoto(target){
         console.log(data);
     })
 }
+/*
+    imgFullScreen.addEventListener("click",()=>{
+        imgFullScreen.style.display = "none";
+        e.target.disabled = false;
+    })
+ */
 
+
+let index = 0;
 //부모에 위임해서 JS로 새로 생긴 HTML에게도 eventListen 할수 있게 해주는 코드
 $(".add")
     .addEventListener("click",(e)=>{
@@ -90,51 +98,69 @@ $(".add")
                 const imgFullScreen = $("#imgFullScreen")
                 imgFullScreen.style.display = "flex";
                 $("#fsImg").src = e.target.parentElement.querySelector(".photo").src;
-                imgFullScreen.addEventListener("click",()=>{
-                    imgFullScreen.style.display = "none";
-                    e.target.disabled = false;
-                })
+
+                const allFiles = document.querySelectorAll(".file");
+                index = Array.prototype.indexOf.call(allFiles,e.target);
             }
         }
 
         //왼쪽 오른쪽 버튼 누르면 다른 사진으로 넘어가는 코드
         if (e.target.className == "prevImg"){
             const allPrevImg = document.querySelectorAll(".prevImg");
-            const index = Array.prototype.indexOf.call(allPrevImg,e.target);
-            const allNumbers = document.querySelectorAll(".number");
-            const total = document.querySelectorAll(".total")[index].innerText;
-            const allInitPhotos = document.querySelectorAll(".photo");
-            if (allNumbers[index].innerText==1){
-                allNumbers[index].innerText = total;
-            }
-            else{
-                allNumbers[index].innerText--;
-            }
-
-            //사진바꾸기 술
-            //data[1].Birds[allNumbers[index].innerText -1]
-            let currentImg = allNumbers[index].innerText -1
-            allInitPhotos[index].src = data[1].Birds[index].Photos[currentImg];
-            //allInitPhotos[index].src = data[1].Birds[allNumbers[index].innerText -1];
+            index = Array.prototype.indexOf.call(allPrevImg,e.target);
+            leftPhoto(index);
         }
         if (e.target.className=="nextImg"){
             const allNextImg = document.querySelectorAll(".nextImg");
-            const index = Array.prototype.indexOf.call(allNextImg,e.target);
-            const allNumbers = document.querySelectorAll(".number");
-            const total = document.querySelectorAll(".total")[index].innerText;
-            const allInitPhotos = document.querySelectorAll(".photo");
-            if (allNumbers[index].innerText==total){
-                allNumbers[index].innerText = 1;
-            }
-            else{
-                allNumbers[index].innerText++;
-            }
-            let currentImg = allNumbers[index].innerText -1
-            allInitPhotos[index].src = data[1].Birds[index].Photos[currentImg];
+            index = Array.prototype.indexOf.call(allNextImg,e.target);
+            rightPhoto(index);
         }
     })
+$('#fsNextImg').addEventListener('click',(e)=>{
+    rightPhoto(index);
+})
+$('#fsPrevImg').addEventListener('click',(e)=>{
+    leftPhoto(index);
+})
+$('#fsDelBtn').addEventListener('click',()=>{
+    $('#imgFullScreen').style.display = "none";
+    document.querySelectorAll('.file').forEach(file=>{
+        file.disabled = false;
+    })
+})
 
 
+function rightPhoto(index){
+    const allNumbers = document.querySelectorAll(".number");
+    const total = document.querySelectorAll(".total")[index].innerText;
+    const allInitPhotos = document.querySelectorAll(".photo");
+    if (allNumbers[index].innerText==total){
+        allNumbers[index].innerText = 1;
+    }
+    else{
+        allNumbers[index].innerText++;
+    }
+    let currentImg = allNumbers[index].innerText -1
+    allInitPhotos[index].src = data[1].Birds[index].Photos[currentImg];
+    document.querySelector('#fsImg').src = data[1].Birds[index].Photos[currentImg];
+}
+
+function leftPhoto(index){
+    
+    const allNumbers = document.querySelectorAll(".number");
+    const total = document.querySelectorAll(".total")[index].innerText;
+    const allInitPhotos = document.querySelectorAll(".photo");
+    if (allNumbers[index].innerText==1){
+        allNumbers[index].innerText = total;
+    }
+    else{
+        allNumbers[index].innerText--;
+    }
+    //사진바꾸기 술
+    let currentImg = allNumbers[index].innerText -1
+    allInitPhotos[index].src = data[1].Birds[index].Photos[currentImg];
+    document.querySelector('#fsImg').src = data[1].Birds[index].Photos[currentImg];
+}
 
 //Submit 누르면 날짜와 장소를 json파일로 옮기기
 $("#addRecordBirdButton")
