@@ -18,7 +18,23 @@ function nextPic(){
     if (num2==4){num2 = 0;}
 }
 setInterval(changePic,1*1000*10);
-setInterval(nextPic, 1*1000*10);
+setTimeout(()=>{
+    setInterval(nextPic, 1*1000*10);
+},100);
+
+
+nextpic.animate(
+    [
+        {transform:'translateX(-100vw)', offset:0},
+        {transform:'translateX(-100vw)', offset:0.85},
+        {transform: 'translateX(0%)', offset:1}
+    ],
+    {
+        duration: 10000,
+        easing: 'ease-in',
+        iterations: Infinity
+    }
+)
 
 const startPage = document.getElementById("startPage");
 function openPage(){

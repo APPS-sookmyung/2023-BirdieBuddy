@@ -67,6 +67,12 @@ body{
 #birdwatchBasicInfo{
     grid-area:"a";
 }
+.fullScreenExplain{
+    margin-left:40px;
+    margin-top: 1vh;
+    font-size: 8px;
+    color:grey;
+}
 .add{
     grid-area:"b";
 }

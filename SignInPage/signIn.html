@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="../StartPage/birdOfKoreaLogo.png" type="image/x-icon">
+    <link rel="icon" href="../birdOfKoreaLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="signIn.css">
 </head>
 <body>
@@ -13,15 +13,15 @@
         <img src="./img/signInBackground.png" id="signInBackground">
         <div id="signInForm">
             <h2 id="title">Sign In</h2>
-            <form>
+            <form id="userinfo" method="POST">
                 <div class="textborder">
-                    <input type="text" id="id" autocomplete="off" placeholder="Email" style="color:white">
+                    <input type="text" name="userId" id="id" autocomplete="off" placeholder="Email" style="color:white">
                 </div>
                 <div class="textborder">
-                    <input type="password" id="pw" autocomplete="off" placeholder="Password" style="color:white">
+                    <input type="password" name="pw" id="pw" autocomplete="off" placeholder="Password" style="color:white">
                 </div>
                 <div>
-                    <button type="button" id="submitButton">Start</button>
+                    <input type="submit" id="submitButton" value="Start"></input>
                 </div>
             </form>
         </div>
