@@ -8,24 +8,27 @@
     <link rel="stylesheet" href="signIn.css">
 </head>
 <body>
+    <object data="./img/IDBird.svg" id="idBird"></object>
+    <input type="text" id="id" autocomplete="off" spellcheck="false">
     <div id="signInPage">
-        <img src="./img/leaf.png" class="leaf" id="leftLeaf">
-        <img src="./img/signInBackground.png" id="signInBackground">
+        <img src="./img/leaf.png" class="leaf" id="leftLeaf" draggable="false">
+        <img src="./img/signInBackground.png" id="signInBackground" draggable="false">
         <div id="signInForm">
             <h2 id="title">Sign In</h2>
             <form id="userinfo" method="POST">
                 <div class="textborder">
-                    <input type="text" name="userId" id="id" autocomplete="off" placeholder="Email" style="color:white">
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Email" style="color:white" required>
                 </div>
                 <div class="textborder">
-                    <input type="password" name="pw" id="pw" autocomplete="off" placeholder="Password" style="color:white">
+                    <input type="password" name="pw" id="pw" autocomplete="off" placeholder="Password" style="color:white" autocomplete="off" required>
                 </div>
                 <div>
                     <input type="submit" id="submitButton" value="Start"></input>
                 </div>
             </form>
         </div>
-        <img src="./img/leaf2.png" class="leaf" id="rightLeaf">
+        <img src="./img/leaf2.png" class="leaf" id="rightLeaf" draggable="false">
+        <p id="instruction">동박새 이름을 지어주세요!</p>
     </div>
     <script src="signIn.js" type="module"></script>
 </body>
