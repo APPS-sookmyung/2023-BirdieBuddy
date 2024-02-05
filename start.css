@@ -104,8 +104,14 @@ body{
     text-align: center;
     margin-top: 100px;
 }
-#id, #pw{
+#email, #pw{
     width: 95%;
+}
+.warning{
+    color:red;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 12px;
 }
 
 @media screen and (max-width:1500px), (max-height:720px){

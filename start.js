@@ -38,6 +38,33 @@ nextpic.animate(
 
 const startPage = document.getElementById("startPage");
 function openPage(){
-    location.href = "../test/testing.html";
+    //location.href = "../test/testing.html";
 }
 startPage.addEventListener("submit", openPage);
+
+
+
+$('#submitButton').addEventListener('click',(e)=>{
+    e.preventDefault();
+
+    const data = {
+        "email": $('#email').value,
+        "pw": $('#pw').value,
+    }
+    console.log(data);
+    fetch("https://birdieserver.today:8080/StartPage",{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        console.log(response.status);
+        if (response.status==200){
+            location.href = "./EncyclopediaPage/encyclopedia.html";
+        } else{
+            $('#startNew').insertAdjacentHTML('beforebegin',`<p class="warning">아메일/비번이 일치하지 않습니다.</p>`);
+        }
+    }) 
+})
