@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="icon" href="../birdOfKoreaLogo.png" type="image/x-icon">
-        <link rel="stylesheet" href="./ask.css">
+        <link rel="stylesheet" href="addQuestion.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -18,38 +18,21 @@
         <div id="mainFrame">
             <image src="../mascot.png" id="searchMascot"></image>
             <div id="main">
-                <div id="questions">
-                    <div id="add">
-                        <img src="./img/addQuestionImg.png" id="addImg">
-                        <div id="topLeftCorner"></div>
-                        <div id="topRightCorner"></div>
-                        <div id="bottomLeftCorner"></div>
-                        <div id="bottomRightCorner"></div>
+                <div id="inputGroup">
+                    <div id="titleDiv">
+                        <input type="text" placeholder="제목" id="title">
                     </div>
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
-                    <img src="./birdpic.jpg" class="question">
+                    <textarea placeholder="내용을 입력하세요." id="text"></textarea>
+                    <div id="imgs">
+                        <img id="output">
+                    </div>
+                    <div id="buttons">
+                        <input type="file" id="fileButton">
+                        <label for="fileButton"><img src="../UI/camera.png" id="fileButtonImg"></label>
+                        <button id="finishButton">완료</button>
+                    </div>
+                    <p>일하기시렁</p>
                 </div>
-                
             </div>
             <div id="line"></div>
             <div id="buttonLine">
@@ -65,6 +48,6 @@
                 </div>
             </div>
         </div>
-        <script src="./ask.js" type="module"></script>
+        <script src="./addQuestion.js" type="module"></script>
     </body>
 </html>

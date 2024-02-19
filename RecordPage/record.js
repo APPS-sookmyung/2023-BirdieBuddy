@@ -13,11 +13,14 @@ const date = new Date();
 $("#date").value = date.getFullYear() + "-" + ('0'+(date.getMonth()+1)).slice(-2) + "-" + date.getDate();
 
 //탐조 위치: 쓰는 글에 따라 배경 흰색 부분이 같이 커지는 코드
+const place = $("#place");
 function resizeInput() {
     if (this.value != 0)
         this.style.width = (this.value.length + 5) + "em";
+    if (this.value == 0){
+        this.style.width = "fit-content";
+    }
 }
-const place = $("#place");
 place.addEventListener("input",resizeInput);
 
 

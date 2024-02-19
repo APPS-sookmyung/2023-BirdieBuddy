@@ -19,7 +19,7 @@
                 <div id="profile">
                     <p style="font-weight: 900;">Avatar</p>
                     <div id="avatar"></div>
-                    <input id="nickname" type="text" placeholder='"닉네임"' readonly="readonly">
+                    <input id="nickname" type="text" value='"닉네임"' readonly="readonly" spellcheck="false" autocomplete="off">
                     <img id="editButton1" src="editButton.png">
                 </div>
                 <div id="achieve">
@@ -36,7 +36,7 @@
                             </tr>
                         </table>
                     </div>
-                    <input id="introduce" type="text" placeholder='"자기소개 한마디"' readonly="readonly">
+                    <input id="introduce" type="text" placeholder='"자기소개 한마디"' readonly="readonly" spellcheck="false" autocomplete="off">
                     <img id="editButton2" src="editButton.png">
                     <div id="buttons">
                         <button onclick="location.href ='../MyPage/mypageDecorate.html'">꾸미기</button>
@@ -72,6 +72,6 @@
                 <input type="image" src="../greenTab.png" class="tab">
             </div>
         </div>
-        <script src="mypage.js"></script>
+        <script src="mypage.js" type="module"></script>
     </body>
 </html>

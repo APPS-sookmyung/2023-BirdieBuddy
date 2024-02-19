@@ -34,18 +34,18 @@ form.addEventListener('submit', (e)=>{
                 $('#signInForm').style.display = 'none';
             },1000)
             
-            let checkId = false;
-            $('#idBird').onload = function (){
+            setTimeout(()=>{
                 let idBirdRect = idBird.getBoundingClientRect();
                 const idBirdDoc = idBird.contentDocument;
                 const tags = idBirdDoc.querySelectorAll(".tag");
                 console.log(idBirdDoc);
                 console.log(tags);
                 
-                id.style.left = `${window.innerWidth * 0.5 - idBirdRect.width * 0.3}px`;
-                id.style.top = `${idBirdRect.bottom - idBird.clientHeight*0.22}px`
+                id.style.left = `${window.innerWidth * 0.5 }px`;
+                id.style.top = `${window.innerHeight * 0.5 + idBird.clientHeight*0.23}px`
         
                 idBird.addEventListener('animationend',()=>{
+                    console.log("Animation Ended");
                     tags.forEach(tag=>{
                         tag.animate([
                             {opacity:0},
@@ -174,7 +174,7 @@ form.addEventListener('submit', (e)=>{
                         })
                     }
                 })
-            }
+            },2000)
             setTimeout(function () {
                 //location.href = "../EncyclopediaPage/encyclopedia.html";
             }, 3000);
@@ -206,7 +206,7 @@ email.addEventListener('focusout',()=>{
         }
     }
     if ((!checkDomain) && (email.value.length>0)){
-        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">Please Check Email Format</p>`)
+        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">메일 포멧 확인 바랍니다.</p>`)
     }
 })
 email.addEventListener('focus',()=>{
@@ -228,13 +228,13 @@ pw.addEventListener('focusout',()=>{
     })
     if (noSpecialChar && pw.value.length<10 && pw.value.length){
         checkPw = false;
-        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">Password needs at least one special character and needs to be more than 10 characters.</p>`)
+        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">특수문자 포함 10글자 비밀번호를 요합니다.</p>`)
     } else if (noSpecialChar && pw.value.length){
         checkPw = false;
-        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">Password needs at least one special character.</p>`)
+        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">특수문자가 없습니다.</p>`)
     }else if (pw.value.length<10 && pw.value.length){
         checkPw = false;
-        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">Password needs to be more than 10 characters.</p>`)
+        submitButton.parentElement.insertAdjacentHTML('beforebegin',`<p class="warning">10글자가 아닙니다.</p>`)
     } else if (pw.value.length==0){
         checkPw = false;
     }

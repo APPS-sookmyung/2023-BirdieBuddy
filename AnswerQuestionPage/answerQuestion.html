@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="../birdOfKoreaLogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./answerQuestion.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mainFrame">
+            <div id="main">
+                <div id="question">
+                    <div id="questionInfo">
+                        <div id="questioneeInfo">
+                            <img src="./profiles/profile1.png" class="userProfilePic">
+                            <div id="idAndTime">
+                                <div id="userId"><p>동박이</p></div>
+                                <div id="questionTime"><p>02/17 12:03</p></div>
+                            </div>
+                            <div id="questionTitle"><p>이 새 이름이 뭐죠..?</p></div>
+                            <div id="pictures">
+                                <img src="./askPictures/thrush9.jpg" class="askPics">
+                                <img src="./askPictures/thrush8.jpg" class="askPics">
+                                <img src="./askPictures/thrush6.jpg" class="askPics">
+                                <img src="./askPictures/thrush4.jpg" class="askPics">
+                                <img src="./askPictures/thrush2.jpg" class="askPics">
+                                <img src="./askPictures/thrush1.jpg" class="askPics">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="answer">
+                    <div id="questionData">
+                        <pre id="questionExplanation">
+                            계룡산 탐조를 갔는데...
+                            어디 절에 가보니까 이렇게 이쁜 새가 있는거 아니겠습니까?
+                            눈은 검정색은데 눈 주위가 먹음직스러운 오렌지 색깔입니다.
+                            배는 흰색인데 옆구리가 눈가 색과 비슷한 주황색이었습니다.
+                            부리도 노란게 엄청 이뻤는데
+                            혹시 얘 이름 아시는분 있으실까요?
+                        </pre>
+                        <div class="UIGroup" id="qThumbsUp">
+                            <img class="UI" src="../UI/thumbsUpRed.png">
+                            <p class="UINum" style="color:red">0</p>
+                        </div>
+                        <div class="UIGroup" id="qComments">
+                            <img class="UI" src="../UI/speechBubbleBlue.png" style="transform: translateY(2px);">
+                            <p class="UINum" style="color:turquoise">0</p>
+                        </div>
+                        <div id="questionButtons">
+                            <button class="questionButton">저도 궁금해요!</button>
+                            <button class="questionButton">질문 삭제하기</button>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="orgComment">
+                            <div class="commentTopLine">
+                                <img src="./profiles/profile3.png" class="userProfilePic">
+                                <div class="answerId"><p>솔봉이</p></div>
+                                <div class="commentButtons">
+                                    <button class="commentButton"><button class="commentButton"><img src="../UI/speechBubbleGrey.png" class="ui"></button></button>
+                                    <button class="commentButton"><img src="../UI/thubsUpGrey.png" class="ui"></button>
+                                </div>
+                            </div>
+                            <p class="commentAnswer">아주 이쁜 되지빠귀이군요!</p>
+                            <p class="commentTime">02/17 15:55</p>
+                            <div class="UIGroup">
+                                <img class="UI" src="../UI/thumbsUpRed.png">
+                                <p class="UINum" style="color:red">1</p>
+                            </div>
+                        </div>
+                        <div class="reComment">
+                            <p class="reCommentSign">ㄴ</p>
+                            <div class="reCommentVal">
+                                <div class="commentTopLine">
+                                    <img src="./profiles/profile3.png" class="userProfilePic">
+                                    <div class="answerId"><p>솔봉이</p></div>
+                                    <div class="commentButtons">
+                                        <button class="commentButton"><img src="../UI/thubsUpGrey.png" class="ui"></button>
+                                    </div>
+                                </div>
+                                <p class="commentAnswer">졸라 잘 찍었다 근데</p>
+                                <p class="commentTime">02/17 15:55</p>
+                            </div>
+                        </div>
+                        <div class="reComment">
+                            <p class="reCommentSign">ㄴ</p>
+                            <div class="reCommentVal">
+                                <div class="commentTopLine">
+                                    <img src="./profiles/profile1.png" class="userProfilePic">
+                                    <div class="answerId questioner"><p>동박이</p></div>
+                                    <div class="commentButtons">
+                                        <button class="commentButton"><img src="../UI/thubsUpGrey.png" class="ui"></button>
+                                    </div>
+                                </div>
+                                <p class="commentAnswer">감사합니다!!</p>
+                                <p class="commentTime">02/17 23:14</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="orgComment">
+                            <div class="commentTopLine">
+                                <img src="./profiles/profile2.png" class="userProfilePic">
+                                <div class="answerId"><p>퇴근 못한 솔봉이</p></div>
+                                <div class="commentButtons">
+                                    <button class="commentButton"><img src="../UI/speechBubbleGrey.png" class="ui"></button>
+                                    <button class="commentButton"><img src="../UI/thubsUpGrey.png" class="ui"></button>
+                                </div>
+                            </div>
+                            <p class="commentAnswer">아는 새 나와서 답하려고 왔는데 야근한다고 한발 늦었네...</p>
+                            <p class="commentTime">02/17 15:55</p>
+                        </div>
+                        <div class="reComment">
+                            <p class="reCommentSign">ㄴ</p>
+                            <div class="reCommentVal">
+                                <div class="commentTopLine">
+                                    <img src="./profiles/profile4.png" class="userProfilePic">
+                                    <div class="answerId"><p>화가나서 동동동</p></div>
+                                    <div class="commentButtons">
+                                        <button class="commentButton"><img src="../UI/thubsUpGrey.png" class="ui"></button>
+                                    </div>
+                                </div>
+                                <p class="commentAnswer">회사 관두고 탐조나 가자<br>개고생해서 뭐하냐 이러나 저러나 몸만 망가지는데 탐조하면서 몸 망가지면 행복하기라도 하지</p>
+                                <p class="commentTime">02/17 15:55</p>
+                            </div>
+                        </div>
+                        <div class="reComment">
+                            <div class="reCommentSign"><p>ㄴ</p></div>
+                            <div class="reCommentVal">
+                                <div class="commentTopLine">
+                                    <img src="./profiles/profile2.png" class="userProfilePic">
+                                    <div class="answerId"><p>퇴근 못한 솔봉이</p></div>
+                                    <div class="commentButtons">
+                                        <button class="commentButton"><img src="../UI/thubsUpGrey.png" class="ui"></button>
+                                    </div>
+                                </div>
+                                <p class="commentAnswer">ㅠㅠㅠㅠㅠㅠ</p>
+                                <p class="commentTime">02/17 15:55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="addCommentPosition">
+                        <div id="addComment">
+                            <textarea id="addCommentTextArea" placeholder="댓글을 입력하세요." spellcheck="false"></textarea>
+                            <button id="addCommentBtn">🐤</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="buttonLine">
+                <button class="pageButton" onclick="location.href = '../EncyclopediaPage/encyclopedia.html'">도감</button>
+                <button class="pageButton" onclick="location.href = '../AskPage/ask.html'" id="currentButton">동정</button>
+                <button class="pageButton" onclick="location.href = '../RecordPage/record.html'">기록</button>
+                <button class="pageButton" onclick="location.href = '../NewsPage/news.html'" >새뉴스</button>
+                <button class="pageButton" onclick="location.href = '../BadgePage/badge.html'">배지</button>
+                <button class="pageButton" onclick="location.href = '../MyPage/mypage.html'">마이페이지</button>
+                <div id="settings">
+                    <a href="../index.html"><img src="../logout.png" class="logout"></a>
+                    <img src="../notification.png" class="notification">
+                </div>
+            </div>
+        </div>
+        <script src="./answerQuestion.js" type="module"></script>
+    </body>
+</html>

@@ -42,6 +42,11 @@ function openPage(){
 }
 startPage.addEventListener("submit", openPage);
 
+//시작페이지로 다시 돌아올 경우 자동으로 로그아웃 시키기
+window.onload = ()=>{
+    document.cookie= "userId=" + "" + "; expires=" + "" + "; path=/";
+    document.cookie = "email=" + "" + "; expires=" + "" + "; path=/";
+}
 
 
 $('#submitButton').addEventListener('click',(e)=>{
@@ -62,9 +67,39 @@ $('#submitButton').addEventListener('click',(e)=>{
     .then(response => {
         console.log(response.status);
         if (response.status==200){
-            location.href = "./EncyclopediaPage/encyclopedia.html";
+            console.log("status 200 ok");
+            createCookie($("#email").value);
         } else{
             $('#startNew').insertAdjacentHTML('beforebegin',`<p class="warning">아메일/비번이 일치하지 않습니다.</p>`);
         }
     }) 
 })
+
+function createCookie(email){
+    fetch("https://birdieserver.today:8080/allUserPage")
+    .then(val => val.json())
+    .then(result => {
+        console.log("쿠키 시도!")
+        let returnVal = false;
+        result.data.forEach(account=>{
+            console.log(account);
+            if (account.email == email){
+                var date = new Date();
+                date.setTime(date.getTime()+(3*60*60*1000));
+                document.cookie = "userId=" + account.userId + "; expires=" + date.toGMTString() + "; path=/";
+                document.cookie = "email=" + account.email + "; expires=" + date.toGMTString() + "; path=/";
+                returnVal = true;
+            }
+        })
+        return returnVal;
+    })
+    .then(result => {
+        console.log(result);
+        if (result){
+            location.href = "./EncyclopediaPage/encyclopedia.html";
+        } else{
+            console.log("쿠키 실패");
+        }
+    })
+
+}

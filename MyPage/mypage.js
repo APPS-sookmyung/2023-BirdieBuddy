@@ -1,3 +1,5 @@
+import {$} from "../src/util.js";
+
 const pageButton = document.getElementsByClassName("pageButton");
 for (let i=0; i<pageButton.length;i++){
     if (pageButton[i].id != "currentButton"){
@@ -29,3 +31,15 @@ introduce.addEventListener("blur",function(){
     this.style.pointerEvents = "none";
     this.setAttribute("readonly","readonly");
 })
+
+//set nickname
+console.log(document.cookie);
+const userId = getCookie("userId");
+$("#nickname").value = userId;
+
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
