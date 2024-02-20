@@ -3,9 +3,16 @@
     <head>
         <link rel="icon" href="../birdOfKoreaLogo.png" type="image/x-icon">
         <link rel="stylesheet" href="addQuestion.css">
+        <link rel="stylesheet" href="../node_modules/cropperjs/dist/cropper.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +22,50 @@
         <title>Document</title>
     </head>
     <body>
+        <div id="cropWorkSpace">
+            <div id="cropImgArea">
+                <img id="cropImg">
+            </div>
+            <div id="cropTools">
+                <div id="preview">
+                    <img id="previewImg" width="10vw">
+                </div>
+                <div id="zoom">
+                    <p class="toolP">Zoom</p>
+                    <span class="material-symbols-outlined">zoom_in</span>
+                    <span class="material-symbols-outlined">zoom_out</span>
+                </div>
+                <div id="move">
+                    <p class="toolP">Move</p>
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                    <span class="material-symbols-outlined">arrow_upward</span>
+                    <span class="material-symbols-outlined">arrow_downward</span>
+                </div>
+                <button id="cropBtn">자르기</button>
+            </div>
+        </div>
         <div id="mainFrame">
             <image src="../mascot.png" id="searchMascot"></image>
             <div id="main">
                 <div id="inputGroup">
-                    <div id="titleDiv">
-                        <input type="text" placeholder="제목" id="title">
+                    <div class="inputGroupling">
+                        <div id="textInputs">
+                            <div id="titleDiv">
+                                <input type="text" placeholder="제목" id="title">
+                            </div>
+                            <textarea placeholder="내용을 입력하세요." id="text"></textarea>
+                        </div>
+                        <img src="" id="cropResult">                                              
                     </div>
-                    <textarea placeholder="내용을 입력하세요." id="text"></textarea>
+                    
                     <div id="imgs">
-                        <img id="output">
                     </div>
                     <div id="buttons">
-                        <input type="file" id="fileButton">
+                        <input type="file" id="fileButton" multiple="multiple" accept='image/*'>
                         <label for="fileButton"><img src="../UI/camera.png" id="fileButtonImg"></label>
                         <button id="finishButton">완료</button>
                     </div>
-                    <p>일하기시렁</p>
                 </div>
             </div>
             <div id="line"></div>
@@ -48,6 +82,94 @@
                 </div>
             </div>
         </div>
+        <script>
+            function displayOptions(e){
+                if (e.target.classList.contains("img")){
+                    e.target.querySelector(".imgOptions").style.display = "flex";
+                    e.target.querySelector(".imgOptions").style.justifyContent = "space-between";
+                    e.target.querySelector(".imgOptions").style.alignItems = "center";
+
+                } else{
+                    e.target.closest(".img").querySelector(".imgOptions").style.display = "flex";
+                    e.target.closest(".img").querySelector(".imgOptions").style.justifyContent = "space-between";
+                    e.target.closest(".img").querySelector(".imgOptions").style.alignItems = "center";
+                }
+            }
+            function hideOptions(e){
+                if (e.target.classList.contains("img")){
+                    e.target.querySelector(".imgOptions").style.display = "none";
+                } else{
+                    e.target.closest(".img").querySelector(".imgOptions").style.display = "none";
+                }
+            }
+            function deletePic(e){
+                e.target.parentElement.parentElement.remove();
+            }
+
+            function changeStar(e){
+                let result = checkForStar(e.target);
+                console.log(result);
+                if (result=="turnGold"){
+                    e.target.src = "../UI/goldStar.png";
+                    e.target.classList.remove("greyStar");
+                    e.target.classList.add("goldStar");
+                    document.querySelector("#cropWorkSpace").style.display = "flex";
+                    document.querySelector('#cropImg').innerHTML = `<img src="" alt="" id="#cropImg">`
+                    console.log(e.target.closest(".img").querySelector(".output"));
+                    document.querySelector("#cropImg").src = e.target.closest(".img").querySelector(".output").src;
+
+                    var options = {
+                        dragMode: 'move',
+                        preview: '#previewImg',
+                        viewMode: 2,
+                        modal: false,
+                        background: false,
+                        ready: function(){
+                            console.log("Cropper ready")
+                            cropper.setAspectRatio(1);
+                            document.querySelector("#zoom :nth-child(2)").onclick = () => cropper.zoom(0.1);
+                            document.querySelector("#zoom :nth-child(3)").onclick = () => cropper.zoom(-0.1);
+                            document.querySelector("#move :nth-child(2)").onclick = () => cropper.move(-1,0);
+                            document.querySelector("#move :nth-child(3)").onclick = () => cropper.move(1,0);
+                            document.querySelector("#move :nth-child(4)").onclick = () => cropper.move(0,1);
+                            document.querySelector("#move :nth-child(5)").onclick = () => cropper.move(0,-1);
+                            document.querySelector("#cropBtn").onclick = () => {
+                                cropper.getCroppedCanvas().toBlob((blob)=>{
+                                    var downloadURL = window.URL.createObjectURL(blob);
+                                    document.querySelector("#cropResult").src = downloadURL;
+                                })
+                                cropper.destroy();
+                                document.querySelector("#cropWorkSpace").style.display = "none";
+                            }
+                        }
+                    }
+                    var cropper = new Cropper(document.querySelector("#cropImg"),options);
+
+                } else if(result=="turnGrey"){
+                    e.target.src = "../UI/greyStar.png";
+                    e.target.classList.remove("goldStar");
+                    e.target.classList.add("greyStar");
+                    document.querySelector("#cropResult").src = "";
+                } else if(result=="reject"){
+                    console.log("rejected");
+                }
+            }
+            function checkForStar(clicked){
+                let goldStar = document.querySelector(".goldStar");
+                console.log(goldStar);
+                if (goldStar==null){
+                    return "turnGold";
+                } else{
+                    if (clicked.classList.contains("goldStar")){
+                        return "turnGrey";
+                    } else{
+                        return "reject";
+                    }
+                }
+            }
+        </script>
         <script src="./addQuestion.js" type="module"></script>
+        <script src="../node_modules/cropperjs/dist/cropper.js" type="module"></script>
+
     </body>
 </html>
