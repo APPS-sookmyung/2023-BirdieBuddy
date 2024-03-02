@@ -111,7 +111,7 @@ body{
 #fileButton{
     display:none;
 }
-#fileButton:hover{
+#fileButtonImg:hover{
     cursor: pointer;
 }
 #fileButtonImg{
