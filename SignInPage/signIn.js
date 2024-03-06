@@ -42,7 +42,7 @@ form.addEventListener('submit', (e)=>{
                 console.log(tags);
                 
                 id.style.left = `${window.innerWidth * 0.5 }px`;
-                id.style.top = `${window.innerHeight * 0.5 + idBird.clientHeight*0.3}px`
+                id.style.top = `${window.innerHeight * 0.5 + idBird.clientHeight*0.35}px`
         
                 idBird.addEventListener('animationend',()=>{
                     console.log("Animation Ended");
